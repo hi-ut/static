@@ -1,0 +1,163 @@
+{
+  "kodai" : [
+    {
+      "label" : "第１室（第１編）",
+      "children" : [
+        {
+          "id" : "yamaguchi",
+          "position" :"教授",
+          "name_ja" : "山口 英男",
+          "name_en" : "YAMAGUCHI Hideo",
+          "name_kana" : "やまぐち ひでお",
+          "researches": [
+            {
+              "ja": "古代史料の書類学"
+            },
+            {
+              "ja": "古代行政システムの在地的展開"
+            }
+          ]
+        },
+        {
+          "id" : "inada",
+          "position" :"准教授",
+          "name_ja" : "稲田 奈津子",
+          "name_en" : "INADA Natsuko",
+          "name_kana" : "いなだ なつこ",
+          "researches": [
+            {
+              "ja": "古代儀礼史研究、律令制研究"
+            }
+          ],
+          "also": [
+            {
+              "name": "画像史料解析センター",
+              "path": "gazo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label" : "第２室（第２編）",
+      "children" : [
+        {
+          "id" : "onoe",
+          "position" :"教授",
+          "name_ja" : "尾上 陽介",
+          "name_en" : "ONOE Yousuke",
+          "name_kana" : "おのえ ようすけ",
+          "researches": [
+            {
+              "ja": "古代中世の古記録の研究"
+            }
+          ]
+        },
+        {
+          "id" : "banse",
+          "position" :"准教授",
+          "name_ja" : "伴瀬 明美",
+          "name_en" : "BANSE Akemi",
+          "name_kana" : "ばんせ あけみ",
+          "url" : "https://researchmap.jp/akemib",
+          "researches": [
+            {
+              "ja": "古代・中世天皇家の研究"
+            }
+          ]
+        },
+        {
+          "id" : "kurosu",
+          "position" :"助教",
+          "name_ja" : "黒須 友里江",
+          "name_en" : "KUROSU Yurie",
+          "name_kana" : "くろす ゆりえ",
+          "researches": [
+            {
+              "ja": "平安時代の政務・儀式"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label" : "第３室（第３編）",
+      "children" : [
+        {
+          "id" : "tajima",
+          "position" :"教授",
+          "name_ja" : "田島 公",
+          "name_en" : "TAJIMA Isao",
+          "name_kana" : "たじま いさお",
+          "researches": [
+            {
+              "ja": "古代・中世の古典籍の伝来と禁裏・公家文庫の研究",
+              "url" : "https://www.hi.u-tokyo.ac.jp/kodai/kinri-kuge-index.html"
+            }
+          ]
+        },
+        {
+          "id" : "fujiwara",
+          "position" :"准教授",
+          "name_ja" : "藤原 重雄",
+          "name_en" : "FUJIWARA Shigeo",
+          "name_kana" : "ふじわら しげお",
+          "url" : "https://www.hi.u-tokyo.ac.jp/personal/fujiwara/index.html",
+          "also": [
+            {
+              "name": "画像史料解析センター",
+              "path": "gazo"
+            }
+          ],
+          "researches": [
+            {
+              "ja": "中世文化史、絵画史料論"
+            }
+          ]
+        },
+        {
+          "id" : "oshio",
+          "position" :"助教",
+          "name_ja" : "小塩 慶",
+          "name_en" : "OSHIO Kei",
+          "name_kana" : "おしお けい",
+          "researches": [
+            {
+              "ja": "古代文化史の研究"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label" : "第４室（第４編）・第５室（第５編）",
+      "children" : [
+        {
+          "id" : "kazuto",
+          "position" :"教授",
+          "name_ja" : "本郷 和人",
+          "name_en" : "TAJIMA Isao",
+          "name_kana" : "たじま いさお",
+          "url" : "https://www.hi.u-tokyo.ac.jp/personal/kazuto/index.html",
+          "researches": [
+            {
+              "ja": "中世政治史と史料論"
+            }
+          ]
+        },
+        {
+          "id" : "horikawa",
+          "position" :"助教",
+          "name_ja" : "堀川 康史",
+          "name_en" : "HORIKAWA Yasufumi",
+          "name_kana" : "ほりかわ やすふみ",
+          "researches": [
+            {
+              "ja": "室町幕府の研究"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

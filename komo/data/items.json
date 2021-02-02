@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "label": "",
+      "children": ["onoe","kurushima","shinichi","toshiko","endo"]
+    },
+    {
+      "label": "",
+      "children": ["inoue","kikuchi","entama","kinoshita","kose"]
+    }
+    
+  ],
+  "id": "komo",
+  "title": "古文書古記録部"
+}

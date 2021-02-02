@@ -1,0 +1,25 @@
+{ "items" : [
+  {
+  "label": "センター長",
+  "en" : "Director",
+  "children": ["hoya"]
+},
+{
+  "label": "史料情報集約化ユニット",
+  "en" : "collect information about the historical materials",
+  "children": ["kamogawa", "oikawa", "yamada"]
+},
+{
+  "label": "史料情報資源化ユニット",
+  "en" : "information system of digitized images",
+  "children": ["yanbe", "kaneko", "shibutani"]
+},
+{
+  "label": "史料情報集約化ユニット",
+  "en" : "knowledge database regarding compiling historical sources",
+  "children": ["hoya", "yamada", "nakamura"]
+}
+],
+"id" : "cdps",
+"title" : "前近代日本史情報国際センター"
+}

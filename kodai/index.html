@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+
+    <title>
+      古代史料部門 - 東京大学史料編纂所 | Historiographical Institute The
+      University of Tokyo
+    </title>
+
+    <meta data-n-head="ssr" http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      data-n-head="ssr"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      data-n-head="ssr"
+      name="format-detection"
+      content="telephone=no, email=no, address=no"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="description"
+      name="description"
+      content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="keywords"
+      name="keywords"
+      content="東京大学史料編纂所, Historiographical Institute, 東京大学, The University of Tokyo"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:site_name"
+      property="og:site_name"
+      content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:type"
+      property="og:type"
+      content="website"
+    />
+    <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="/" />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:title"
+      property="og:title"
+      content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:description"
+      property="og:description"
+      content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:image"
+      property="og:image"
+      content="/img/ogp/home.jpg"
+    />
+    <meta data-n-head="ssr" name="twitter:card" content="summary_large_image" />
+    <meta data-n-head="ssr" name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      data-n-head="ssr"
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta data-n-head="ssr" data-hid="charset" charset="utf-8" />
+    <meta
+      data-n-head="ssr"
+      data-hid="mobile-web-app-capable"
+      name="mobile-web-app-capable"
+      content="yes"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="apple-mobile-web-app-title"
+      name="apple-mobile-web-app-title"
+      content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="theme-color"
+      name="theme-color"
+      content="#ffffff"
+    />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css"
+      rel="stylesheet"
+    />
+
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <script src="../assets/js/vue.js"></script>
+    <script src="../assets/js/axios.min.js"></script>
+    <script src="../assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="../assets/js/env.js"></script>
+
+    <script src="../common/layout.js"></script>
+    <script src="../common/components/layout/LayoutAbout.js"></script>
+
+    <script src="../common/components/organization/members.js"></script>
+    <script src="../common/components/organization/member.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :dict="dict" :lang="lang" :menu="menu">
+        <layout-about
+          v-if="menu && menu[0]"
+          :title="title"
+          :lang="lang"
+          :dict="dict"
+          :menu="menu"
+          :index="0"
+          :breadcrumbs="breadcrumbs"
+        >
+          <p>
+            　古代から中世前期を４チームで分担し、『大日本史料』第一編から第五編までと『正倉院文書目録』の編纂を担当しています。
+          </p>
+
+          <p>
+            『大日本史料』は六国史のあとをうけて、仁和３年（887）の宇多天皇の践祚から第一編が始まり、第五編は鎌倉時代の末までを扱います。このうち第一編と第四編は一応の編纂を終えました。第一編については別冊補遺四冊を刊行し、データベース等による公開に切り換え、新たに「九世紀編年史料」（仮題）の編纂を進めています。第四編の別冊補遺は一冊刊行したところで中断しています。
+          </p>
+
+          <p>
+            『正倉院文書目録』は、わが国最古の古文書群である「正倉院文書」について、文字のみならず料紙の状態、接続の復元など様々な情報について調査してきた成果をまとめたものです。加えて、天皇家・公家の文庫・宝蔵研究の推進も担っています。
+          </p>
+
+          <h2 class="h03">刊行物 （2009 ～ 2018年度）</h2>
+
+          <ul class="mb-5">
+            <li>『大日本史料　第二編』　　30・31</li>
+            <li>『大日本史料　第三編』　　29</li>
+            <li>『大日本史料　第五編』　　34・35・36</li>
+            <li>『正倉院文書目録』　　　 　6・7</li>
+            <li>『大日本古記録　陽明文庫本勘例』上</li>
+          </ul>
+
+          <div class="text-center">
+            <img class="mb-2" :height="300" contain src="./images/gebumi.jpg" />
+          </div>
+          <p class="text-center">尾張国郡司百姓等解文（史料編纂所所蔵）</p>
+
+          <members :items="items" :id="id" :lang="lang" :dict="dict" />
+        </layout-about>
+      </layout>
+    </div>
+
+    
+
+    <script>
+      new Vue({
+        el: '#app',
+        methods: {
+          $t(data) {
+            if (this.dict[data]) {
+              return this.dict[data]
+            } else {
+              return data
+            }
+          },
+        },
+        data: {
+          lang: 'ja',
+          title: '',
+          baseUrl: '',
+          items: [],
+          id: '',
+          dict: {},
+          menu: [],
+          baseUrl: process.env.BASE_URL,
+          breadcrumbs: [{ text: "ご案内", name: "about" }],
+        },
+        async created() {
+          var self = this
+          await axios
+            .get(this.baseUrl + '/data/lang/ja.json')
+            .then(function (res) {
+              self.dict = res.data
+            })
+          await axios.get('./data/items.json').then(function (res) {
+            const data = res.data
+            self.items = data.items
+            self.id = data.id
+            self.title = self.$t(data.title)
+          })
+          await axios
+            .get(this.baseUrl + '/data/data.json')
+            .then(function (res) {
+              self.menu = res.data
+            })
+        },
+      })
+    </script>
+  </body>
+</html>

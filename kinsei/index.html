@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+
+    <title>近世史料部 - 東京大学史料編纂所 | Historiographical Institute The University of Tokyo</title>
+
+    <meta data-n-head="ssr" http-equiv="x-ua-compatible" content="ie=edge">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no, email=no, address=no">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。">
+    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="東京大学史料編纂所, Historiographical Institute, 東京大学, The University of Tokyo">
+    <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo">
+    <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website">
+    <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="/">
+    <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo">
+    <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。">
+    <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="/img/ogp/home.jpg">
+    <meta data-n-head="ssr" name="twitter:card" content="summary_large_image">
+    <meta data-n-head="ssr" name="apple-mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
+    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo">
+    <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#ffffff">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css"
+      rel="stylesheet"
+    />
+
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <script src="../assets/js/vue.js"></script>
+    <script src="../assets/js/axios.min.js"></script>
+    <script src="../assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="../assets/js/env.js"></script>
+
+    <script src="../common/layout.js"></script>
+    <script src="../common/components/layout/LayoutAbout.js"></script>
+
+    <script src="../common/components/organization/members.js"></script>
+    <script src="../common/components/organization/member.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :dict="dict" :lang="lang" :menu="menu">
+        <layout-about
+        v-if="menu && menu[0]"
+        :title="title"
+        :lang="lang"
+        :dict="dict"
+        :menu="menu"
+        :index="0"
+        :breadcrumbs="breadcrumbs"
+      >
+            <p>
+              　江戸幕府の成立（慶長８年・1603）から廃藩置県（明治４年･1871）までを担当し、この間を６チームで分担します。江戸前期の編年史料、公家史料・幕府史料・大名史料などの類纂史料、および外国関係史料に分かれて作業を進めています。
+            </p>
+
+            <p>
+              近世史学界の現況を踏まえて史料編纂所は何をなすべきか、近世史料部門ではこの議論の結果、幕府史料・公家史料を中心にした近世編年データベースを構築中で、一部をインターネット上で公開しています。
+            </p>
+
+            <p>
+              対馬藩、薩摩藩を介した東アジア諸国との交渉については、史料編纂所が保管する宗家史料・島津家文書のデータベース化・公開検索サービスを行っています。近世史編纂支援のため、現行出版物についての版面画像データベースを構築中で、現在部分公開しています。幕末維新期では『大日本維新史料』稿本の画像データの閲覧サービスをしています。
+            </p>
+
+            <h2 class="my-5">刊行物 （2007 ～ 2016年度）</h2>
+
+            <ul class="mb-5">
+              <li>『大日本史料　第十二編』　59・60・61</li>
+              <li>『大日本近世史料　市中取締類集』　28・29</li>
+              <li>『大日本近世史料　細川家史料』　21・22・23・24・25</li>
+                <li>『大日本近世史料　広橋兼胤公武御用日記』　9・10・11・12</li>
+                  <li>『大日本古記録　斎藤月岑日記』　7・8・9・10</li>
+                    <li>『大日本維新史料　類纂之部　井伊家史料』　26・27・28・29</li>
+                      <li>『大日本古文書　幕末外国関係文書』　附録8・52・53</li>
+                        <li>『大日本古文書　島津家文書』　4・5</li>
+            </ul>
+
+            <div class="text-center">
+              <img
+                class="mb-2"
+                :height="300"
+                contain
+                src="./images/about_hi_saito2.jpg"
+              />
+            </div>
+            <p class="text-center">斎藤月岑日記</p>
+
+            <members :items="items" :id="id" :lang="lang" :dict="dict" />
+          </layout-about>
+      </layout>
+    </div>
+
+    <script>
+      new Vue({
+        el: "#app",
+        methods: {
+          $t(data) {
+            if (this.dict[data]) {
+              return this.dict[data];
+            } else {
+              return data;
+            }
+          },
+        },
+        data() {
+          return {
+            lang: "ja",
+            title: "",
+            items: [],
+            id: "",
+            dict: {},
+            menu: [],
+            baseUrl: process.env.BASE_URL,
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
+          };
+        },
+        async created() {
+          var self = this;
+          await axios
+            .get(this.baseUrl + "/data/lang/ja.json")
+            .then(function (res) {
+              self.dict = res.data;
+            });
+          await axios.get("./data/items.json").then(function (res) {
+            const data = res.data;
+            self.items = data.items;
+            self.id = data.id;
+            self.title = self.$t(data.title);
+          });
+          await axios
+            .get(this.baseUrl + "/data/data.json")
+            .then(function (res) {
+              self.menu = res.data;
+            });
+        },
+      });
+    </script>
+  </body>
+</html>

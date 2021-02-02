@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+
+    <title>
+      中世史料部 - 東京大学史料編纂所 | Historiographical Institute The
+      University of Tokyo
+    </title>
+
+    <meta data-n-head="ssr" http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      data-n-head="ssr"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      data-n-head="ssr"
+      name="format-detection"
+      content="telephone=no, email=no, address=no"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="description"
+      name="description"
+      content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="keywords"
+      name="keywords"
+      content="東京大学史料編纂所, Historiographical Institute, 東京大学, The University of Tokyo"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:site_name"
+      property="og:site_name"
+      content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:type"
+      property="og:type"
+      content="website"
+    />
+    <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="/" />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:title"
+      property="og:title"
+      content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:description"
+      property="og:description"
+      content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:image"
+      property="og:image"
+      content="/img/ogp/home.jpg"
+    />
+    <meta data-n-head="ssr" name="twitter:card" content="summary_large_image" />
+    <meta data-n-head="ssr" name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      data-n-head="ssr"
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta data-n-head="ssr" data-hid="charset" charset="utf-8" />
+    <meta
+      data-n-head="ssr"
+      data-hid="mobile-web-app-capable"
+      name="mobile-web-app-capable"
+      content="yes"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="apple-mobile-web-app-title"
+      name="apple-mobile-web-app-title"
+      content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="theme-color"
+      name="theme-color"
+      content="#ffffff"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css"
+      rel="stylesheet"
+    />
+
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <script src="../assets/js/vue.js"></script>
+    <script src="../assets/js/axios.min.js"></script>
+    <script src="../assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="../assets/js/env.js"></script>
+
+    <script src="../common/layout.js"></script>
+    <script src="../common/components/layout/LayoutAbout.js"></script>
+
+    <script src="../common/components/organization/members.js"></script>
+    <script src="../common/components/organization/member.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :dict="dict" :lang="lang" :menu="menu">
+          <layout-about
+          v-if="menu && menu[0]"
+          :title="title"
+          :lang="lang"
+          :dict="dict"
+          :menu="menu"
+          :index="0"
+          :breadcrumbs="breadcrumbs"
+        >
+            <p>
+              　建武の新政（正慶２年・元弘３年・1333）から江戸幕府成立（慶長８年・1603）までを６チームで分担し、『大日本史
+              料』第六編から第十一編までを編纂しています。第六・七編の担当は南北朝・室町期、文化史的には足利義満の造った金閣に代表される北山時代です。第八・九編は応仁の乱に始まる戦国期、銀閣に代表される東山時代となります。第十・十一編は新しい秩序を模索する全国統一へ向けた時代、武田信玄・織田信長・豊臣
+              秀吉・徳川家康らの戦国武将が活躍する安土・桃山時代です。
+            </p>
+
+            <p>
+              　この時期の史料には、文書・日記・系図・物語や詩など多様なものがあります。中世史料部門では、これらの史料を全国各地で
+              調査し、影写本・写真などの形で集積するとともに、それらを吟味・解読し、人名や地名の考証を行い、多様な史料を組み合わせて、事件の概要ができるだけ一次史料によって分かるように編纂しています。
+            </p>
+
+            <p>
+              　刊行した『大日本史料』を利用しやすくするため、最近では人名、引用した史料の索引などをデータベース化したり、印刷データを利用して全文データベースを作ったりしています。
+            </p>
+
+            <h2 class="my-5">刊行物 （2008 ～ 2019年度）</h2>
+
+            <ul class="mb-5">
+              <li>『大日本史料』第六編　　48・49・50</li>
+              <li>『大日本史料』第七編　　32・33・34</li>
+              <li>『大日本史料』第八編　　41・42・43</li>
+              <li>『大日本史料』第九編　　25・26・27・28</li>
+              <li>『大日本史料』第十編　　26・27・28・29</li>
+              <li>『大日本史料』第十一編　26・27・28</li>
+              <li>『大日本古記録　碧山日録』　上・下</li>
+            </ul>
+
+            <div class="text-center">
+              <img
+                class="mb-2"
+                :height="300"
+                contain
+                src="./images/about_hi_tokudaiji.jpg"
+              />
+            </div>
+            <p class="text-center">
+              徳大寺公清公記（『大日本史料　第六編』12 掲載）
+            </p>
+
+            <members :items="items" :id="id" :lang="lang" :dict="dict" />
+          </layout-about>
+      </layout>
+    </div>
+
+    
+
+    <script>
+      new Vue({
+        el: "#app",
+        methods: {
+          $t(data) {
+            if (this.dict[data]) {
+              return this.dict[data];
+            } else {
+              return data;
+            }
+          },
+        },
+        data() {
+          return {
+            lang: "ja",
+            title: "",
+            items: [],
+            id: "",
+            dict: {},
+            menu: [],
+            baseUrl: process.env.BASE_URL,
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
+          };
+        },
+        async created() {
+          var self = this;
+          await axios
+            .get(this.baseUrl + "/data/lang/ja.json")
+            .then(function (res) {
+              self.dict = res.data;
+            });
+          await axios.get("./data/items.json").then(function (res) {
+            const data = res.data;
+            self.items = data.items;
+            self.id = data.id;
+            self.title = self.$t(data.title);
+          });
+          await axios
+            .get(this.baseUrl + "/data/data.json")
+            .then(function (res) {
+              self.menu = res.data;
+            });
+        },
+      });
+    </script>
+  </body>
+</html>

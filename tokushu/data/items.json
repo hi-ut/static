@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "label": "特殊史料第１室",
+      "children": ["kawamoto"]
+    },
+    {
+      "label": "特殊史料第２室",
+      "children": ["yanbe"]
+    },
+    {
+      "label": "海外史料第１室",
+      "children": ["mihoko", "mokamoto"]
+    },
+    {
+      "label": "海外史料第２室",
+      "children": ["yoko", "fuyuko", "ndaito"]
+    },
+    {
+      "label": "中世禅籍史料研究プロジェクト",
+      "children": ["ebara", "yanbe", "maekawa", "kawamoto"]
+    }
+  ],
+  "id": "tokushu",
+  "title": "特殊史料部門"
+}

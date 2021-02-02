@@ -1,0 +1,20 @@
+{ "items" : [
+  {
+  "label": "絵画史料分野",
+  "en" : "センター長",
+  "children": ["toshiko", "fujiwara", "inada"]
+},
+{
+  "label": "画像史料分野",
+  "en" : "collect information about the historical materials",
+  "children": ["sugimori", "kuroshima"]
+},
+{
+  "label": "古文書画像分野",
+  "en" : "information system of digitized images",
+  "children": ["inoue", "ohyama"]
+}
+],
+"id" : "gazo",
+"title" : "画像史料解析センター"
+}

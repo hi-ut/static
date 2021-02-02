@@ -1,0 +1,744 @@
+{
+  "yamaguchi": {
+    "position": "教授",
+    "name_ja": "山口 英男",
+    "name_en": "YAMAGUCHI Hideo",
+    "name_kana": "やまぐち ひでお",
+    "researches": [
+      {
+        "ja": "古代史料の書類学"
+      },
+      {
+        "ja": "古代行政システムの在地的展開"
+      }
+    ],
+    "main": "kodai"
+  },
+  "inada": {
+    "position": "准教授",
+    "name_ja": "稲田 奈津子",
+    "name_en": "INADA Natsuko",
+    "name_kana": "いなだ なつこ",
+    "researches": [
+      {
+        "ja": "古代儀礼史研究、律令制研究"
+      }
+    ],
+    "main": "gazo",
+    "also": ["kodai"]
+  },
+  "onoe": {
+    "position": "教授",
+    "name_ja": "尾上 陽介",
+    "name_en": "ONOE Yousuke",
+    "name_kana": "おのえ ようすけ",
+    "researches": [
+      {
+        "ja": "古代中世の古記録の研究"
+      }
+    ],
+    "main": "kodai"
+  },
+  "banse": {
+    "position": "准教授",
+    "name_ja": "伴瀬 明美",
+    "name_en": "BANSE Akemi",
+    "name_kana": "ばんせ あけみ",
+    "url": "https://researchmap.jp/akemib",
+    "researches": [
+      {
+        "ja": "古代・中世天皇家の研究"
+      }
+    ],
+    "main": "kodai"
+  },
+  "kurosu": {
+    "position": "助教",
+    "name_ja": "黒須 友里江",
+    "name_en": "KUROSU Yurie",
+    "name_kana": "くろす ゆりえ",
+    "researches": [
+      {
+        "ja": "平安時代の政務・儀式"
+      }
+    ],
+    "main": "kodai"
+  },
+  "tajima": {
+    "position": "教授",
+    "name_ja": "田島 公",
+    "name_en": "TAJIMA Isao",
+    "name_kana": "たじま いさお",
+    "researches": [
+      {
+        "ja": "古代・中世の古典籍の伝来と禁裏・公家文庫の研究",
+        "url": "https://www.hi.u-tokyo.ac.jp/kodai/kinri-kuge-index.html"
+      }
+    ],
+    "main": "kodai"
+  },
+  "fujiwara": {
+    "position": "准教授",
+    "name_ja": "藤原 重雄",
+    "name_en": "FUJIWARA Shigeo",
+    "name_kana": "ふじわら しげお",
+    "url": "https://www.hi.u-tokyo.ac.jp/personal/fujiwara/index.html",
+    "main": "kodai",
+    "also": ["gazo"],
+    "researches": [
+      {
+        "ja": "中世文化史、絵画史料論"
+      }
+    ]
+  },
+  "oshio": {
+    "position": "助教",
+    "name_ja": "小塩 慶",
+    "name_en": "OSHIO Kei",
+    "name_kana": "おしお けい",
+    "researches": [
+      {
+        "ja": "古代文化史の研究"
+      }
+    ],
+    "main": "kodai"
+  },
+  "kazuto": {
+    "position": "教授",
+    "name_ja": "本郷 和人",
+    "name_en": "TAJIMA Isao",
+    "name_kana": "たじま いさお",
+    "url": "https://www.hi.u-tokyo.ac.jp/personal/kazuto/index.html",
+    "researches": [
+      {
+        "ja": "中世政治史と史料論"
+      }
+    ],
+    "main": "kodai"
+  },
+  "horikawa": {
+    "position": "助教",
+    "name_ja": "堀川 康史",
+    "name_en": "HORIKAWA Yasufumi",
+    "name_kana": "ほりかわ やすふみ",
+    "researches": [
+      {
+        "ja": "室町幕府の研究"
+      }
+    ],
+    "main": "kodai"
+  },
+
+  "ebara": {
+    "position": "教授",
+    "name_ja": "榎原 雅治",
+    "name_en": "EBARA Masaharu",
+    "name_kana": "えばら まさはる",
+    "researches": [
+      {
+        "ja": "中世後期社会の研究"
+      }
+    ],
+    "main": "chusei"
+  },
+  "kamogawa": {
+    "position": "教授",
+    "name_ja": "鴨川 達夫",
+    "name_en": "KAMOGAWA Tatsuo",
+    "name_kana": "かもがわ たつお",
+    "researches": [
+      {
+        "ja": "戦国大名・織豊大名の研究"
+      }
+    ],
+    "main": "chusei",
+    "also": ["cdps"]
+  },
+  "keiko": {
+    "position": "教授",
+    "name_ja": "本郷 恵子",
+    "name_en": "HONGO Keiko",
+    "name_kana": "ほんごう けいこ",
+    "researches": [
+      {
+        "ja": "中世公家政権と文化の研究"
+      },
+      {
+        "ja": "中世史料論"
+      }
+    ],
+    "main": "chusei"
+  },
+  "yanbe": {
+    "position": "教授",
+    "name_ja": "山家 浩樹",
+    "name_en": "YAMBE Koki",
+    "name_kana": "やんべ こうき",
+    "researches": [
+      {
+        "ja": "室町幕府の研究"
+      }
+    ],
+    "main": "chusei",
+    "also": ["tokushu", "cdps"]
+  },
+  "suegara": {
+    "position": "教授",
+    "name_ja": "末柄 豊",
+    "name_en": "SUEGARA Yutaka",
+    "name_kana": "すえがら ゆたか",
+    "researches": [
+      {
+        "ja": "室町時代政治史の研究"
+      },
+      {
+        "ja": "中世史料論"
+      }
+    ],
+    "url": "https://www.hi.u-tokyo.ac.jp/personal/suegara/index.htm",
+    "main": "chusei"
+  },
+  "kawamoto": {
+    "position": "准教授",
+    "name_ja": "川本 慎自",
+    "name_en": "KAWAMOTO Shinji",
+    "name_kana": "かわもと しんじ",
+    "researches": [
+      {
+        "ja": "中世禅宗寺院の研究"
+      }
+    ],
+    "main": "chusei"
+  },
+  "kuroshima": {
+    "position": "准教授",
+    "name_ja": "黒嶋 敏",
+    "name_en": "KUROSHIMA Satoru",
+    "name_kana": "くろしま さとる",
+    "researches": [
+      {
+        "ja": "中世地域・海域社会の研究"
+      }
+    ],
+    "main": "chusei"
+  },
+  "kaneko": {
+    "position": "准教授",
+    "name_ja": "金子 拓",
+    "name_en": "KANEKO Hiraku",
+    "name_kana": "かねこ ひらく",
+    "researches": [
+      {
+        "ja": "中世後期の史料に関する研究"
+      }
+    ],
+    "url": "https://www.hi.u-tokyo.ac.jp/personal/kaneko/index.htm",
+    "main": "chusei",
+    "also": ["cdps"]
+  },
+  "nishida": {
+    "position": "准教授",
+    "name_ja": "西田 友広",
+    "name_en": "NISHIDA Tomohiro",
+    "name_kana": "にしだ ともひろ",
+    "researches": [
+      {
+        "ja": "中世の警察・検察権と社会構造に関する研究"
+      }
+    ],
+    "main": "chusei"
+  },
+  "maekawa": {
+    "position": "准教授",
+    "name_ja": "前川 祐一郎",
+    "name_en": "MAEGAWA Yuichiro",
+    "name_kana": "まえがわ ゆういちろう",
+    "researches": [
+      {
+        "ja": "中世法の研究"
+      }
+    ],
+    "main": "chusei"
+  },
+  "murai": {
+    "position": "准教授",
+    "name_ja": "村井 祐樹",
+    "name_en": "MURAI Yuuki",
+    "name_kana": "むらい ゆうき",
+    "researches": [
+      {
+        "ja": "戦国・室町大名の研究"
+      }
+    ],
+    "url": "https://www.hi.u-tokyo.ac.jp/personal/murai/muraihp.html",
+    "main": "chusei"
+  },
+  "watanabe": {
+    "position": "准教授",
+    "name_ja": "渡邉 正男",
+    "name_en": "WATANABE Masao",
+    "name_kana": "わたなべ まさお",
+    "researches": [
+      {
+        "ja": "法・制度と権利に関する歴史的研究"
+      }
+    ],
+    "main": "chusei"
+  },
+  "suda": {
+    "position": "助教",
+    "name_ja": "須田 牧子",
+    "name_en": "SUDA Makiko",
+    "name_kana": "すだ まきこ",
+    "researches": [
+      {
+        "ja": "中世対外関係史の研究"
+      }
+    ],
+    "main": "chusei"
+  },
+  "hatayama": {
+    "position": "助教",
+    "name_ja": "畑山 周平",
+    "name_en": "HATAYAMA Shuhei",
+    "name_kana": "はたやま しゅうへい",
+    "researches": [
+      {
+        "ja": "中近世移行期大名の研究"
+      }
+    ],
+    "main": "chusei"
+  },
+
+  "kurushima": {
+    "position": "教授",
+    "name_ja": "久留島 典子",
+    "name_en": "KURUSHIMA Noriko",
+    "name_kana": "くるしま のりこ",
+    "researches": [
+      {
+        "ja": "日本中世社会経済史の研究"
+      }
+    ],
+    "main": "komo"
+  },
+  "shinichi": {
+    "position": "教授",
+    "name_ja": "高橋 慎一朗",
+    "name_en": "TAKAHASHI Shinichiro",
+    "name_kana": "たかはし しんいちろう",
+    "researches": [
+      {
+        "ja": "日本中世の都市と寺院の研究"
+      }
+    ],
+    "url": "http://www.hi.u-tokyo.ac.jp/personal/shinichi/index.htm",
+    "main": "komo"
+  },
+  "toshiko": {
+    "position": "教授",
+    "name_ja": "高橋 敏子",
+    "name_en": "TAKAHASHI Toshiko",
+    "name_kana": "たかはし としこ",
+    "researches": [
+      {
+        "ja": "日本中世荘園史および寺院史料の研究"
+      }
+    ],
+    "main": "komo"
+  },
+  "endo": {
+    "position": "教授",
+    "name_ja": "遠藤 基郎",
+    "name_en": "ENDO Motoo",
+    "name_kana": "えんどう もとお",
+    "researches": [
+      {
+        "ja": "日本中世社会の儀礼と寺院の研究"
+      }
+    ],
+    "url": "http://www.hi.u-tokyo.ac.jp/personal/endo/index.html",
+    "main": "komo"
+  },
+  "inoue": {
+    "position": "准教授",
+    "name_ja": "井上 聡",
+    "name_en": "INOUE Satoshi",
+    "name_kana": "いのうえ さとし",
+    "researches": [
+      {
+        "ja": "中世荘園史の研究"
+      }
+    ],
+    "main": "komo"
+  },
+  "kikuchi": {
+    "position": "准教授",
+    "name_ja": "菊地 大樹",
+    "name_en": "KIKUCHI Hiroki",
+    "name_kana": "きくち ひろき",
+    "researches": [
+      {
+        "ja": "中世仏教と古記録の研究"
+      }
+    ],
+    "main": "komo"
+  },
+  "entama": {
+    "position": "准教授",
+    "name_ja": "遠藤 珠紀",
+    "name_en": "KIKUCHI Hiroki",
+    "name_kana": "きくち ひろき",
+    "researches": [
+      {
+        "ja": "中世仏教と古記録の研究"
+      }
+    ],
+    "main": "komo"
+  },
+  "kinoshita": {
+    "position": "助教",
+    "name_ja": "木下 竜馬",
+    "name_en": "KINOSHITA Ryuma",
+    "name_kana": "きのした りゅうま",
+    "researches": [
+      {
+        "ja": "中世法制史の研究"
+      }
+    ],
+    "main": "komo"
+  },
+  "kose": {
+    "position": "助教",
+    "name_ja": "小瀬 玄士",
+    "name_en": "KOSE Genshi",
+    "name_kana": "こせ げんし",
+    "researches": [
+      {
+        "ja": "中世武家社会の研究"
+      }
+    ],
+    "main": "komo"
+  },
+
+  "komiya": {
+    "position": "教授",
+    "name_ja": "小宮 木代良",
+    "name_en": "KOMIYA Kiyora",
+    "name_kana": "こみや きよら",
+    "researches": [
+      {
+        "ja": "近世政治史の研究"
+      },
+      {
+        "ja": "幕府記録類の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "sugimoto": {
+    "position": "教授",
+    "name_ja": "杉本 史子",
+    "name_en": "SUGIMOTO Fumiko",
+    "name_kana": "すぎもと ふみこ",
+    "researches": [
+      {
+        "ja": "18-19世紀前半の政治・社会・法制史の研究"
+      },
+      {
+        "ja": "絵図史料論"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "tsuruta": {
+    "position": "教授",
+    "name_ja": "鶴田 啓",
+    "name_en": "TSURUTA Kei",
+    "name_kana": "つるた けい",
+    "researches": [
+      {
+        "ja": "近世対外関係史の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "kazuo": {
+    "position": "教授",
+    "name_ja": "山口 和夫",
+    "name_en": "YAMAGUCHI Kazuo",
+    "name_kana": "やまぐち かずお",
+    "researches": [
+      {
+        "ja": "近世政治史・朝廷・近代日本"
+      },
+      {
+        "ja": "史学史の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "hakoishi": {
+    "position": "教授",
+    "name_ja": "箱石 大",
+    "name_en": "HAKOISHI Hiroshi",
+    "name_kana": "はこいし ひろし",
+    "researches": [
+      {
+        "ja": "幕末維新政治史"
+      },
+      {
+        "ja": "維新史料編纂事業史"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "ono": {
+    "position": "准教授",
+    "name_ja": "小野 将",
+    "name_en": "ONO Sho",
+    "name_kana": "おの しょう",
+    "researches": [
+      {
+        "ja": "近世のイデオロギー状況・政治文化の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "sugimori": {
+    "position": "准教授",
+    "name_ja": "杉森 玲子",
+    "name_en": "SUGIMORI Reiko",
+    "name_kana": "すぎもと れいこ",
+    "researches": [
+      {
+        "ja": "近世都市社会史の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "araki": {
+    "position": "准教授",
+    "name_ja": "荒木 裕行",
+    "name_en": "ARAKI Hiroyuki",
+    "name_kana": "あらき ひろゆき",
+    "researches": [
+      {
+        "ja": "近世政治史の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "matsuzawa": {
+    "position": "准教授",
+    "name_ja": "松澤 克行",
+    "name_en": "MATSUZAWA Yoshiyuki",
+    "name_kana": "まつざわ よしゆき",
+    "researches": [
+      {
+        "ja": "近世公家社会・文化の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "ishizu": {
+    "position": "助教",
+    "name_ja": "石津 裕之",
+    "name_en": "ISHIZU Hiroyuki",
+    "name_kana": "いしづ ひろゆき",
+    "researches": [
+      {
+        "ja": "近世宗教史の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "tateishi": {
+    "position": "助教",
+    "name_ja": "立石 了",
+    "name_en": "TATEISHI Satoru",
+    "name_kana": "たていし さとる",
+    "researches": [
+      {
+        "ja": "近世大名家臣団の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "a-hayashi": {
+    "position": "助教",
+    "name_ja": "林 晃弘",
+    "name_en": "HAYASHI Akihiro",
+    "name_kana": "はやし あきひろ",
+    "researches": [
+      {
+        "ja": "近世前期政治史の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+  "mizukami": {
+    "position": "助教",
+    "name_ja": "水上 たかね",
+    "name_en": "MIZUKAMI Takane",
+    "name_kana": "みずかみ たかね",
+    "researches": [
+      {
+        "ja": "幕末維新軍事政策史の研究"
+      }
+    ],
+    "main": "kinsei"
+  },
+
+  "yamada": {
+    "position": "准教授",
+    "name_ja": "山田 太造",
+    "name_en": "YAMADA Taizo",
+    "name_kana": "やまだ たいぞう",
+    "researches": [
+      {
+        "ja": "史料からの情報抽出とテキストマイニングに関する研究"
+      }
+    ],
+    "main": "cdps"
+  },
+  "nakamura": {
+    "position": "助教",
+    "name_ja": "中村 覚",
+    "name_en": "NAKAMURA Satoru",
+    "name_kana": "なかむら さとる",
+    "researches": [
+      {
+        "ja": "多様な情報の関連付けによる史料活用と研究環境の高度化に関する研究"
+      }
+    ],
+    "main": "cdps",
+    "rmap": "nakamura.satoru"
+  },
+  "shibutani": {
+    "position": "特任助教",
+    "name_ja": "渋谷 綾子",
+    "name_en": "SHIBUTANI Ayako",
+    "name_kana": "しぶたに あやこ",
+    "researches": [
+      {
+        "ja": "料紙の自然科学的研究"
+      },
+      {
+        "ja": "先史時代人の植物食文化と健康状態の復元"
+      }
+    ],
+    "main": "cdps"
+  },
+  "hoya": {
+    "position": "教授",
+    "name_ja": "保谷（熊澤） 徹",
+    "name_en": "HOYA Toru",
+    "name_kana": "ほや とおる",
+    "url": "https://www.hi.u-tokyo.ac.jp/personal/hoya/index.htm",
+    "researches": [
+      {
+        "ja": "幕末維新期の軍事・外交史"
+      },
+      {
+        "ja": "外交史料論"
+      }
+    ],
+    "main": "cdps",
+    "also": ["kinsei"]
+  },
+  "oikawa": {
+    "position": "准教授",
+    "name_ja": "及川 亘",
+    "name_en": "OIKAWA Wataru",
+    "name_kana": "おいかわ わたる",
+    "researches": [
+      {
+        "ja": "中世後期～近世前期の社会･経済変動の研究"
+      }
+    ],
+    "main": "kinsei",
+    "also": ["cdps"]
+  },
+  "mihoko": {
+    "position": "准教授",
+    "name_ja": "岡　美穂子",
+    "name_en": "OKA Mihoko",
+    "name_kana": "おか みほこ",
+    "researches": [
+      {
+        "ja": "中近世移行期対外関係史、キリシタン史"
+      }
+    ],
+    "main": "tokushu",
+    "also": [],
+    "url": "https://researchmap.jp/read0066505/"
+  },
+  "mokamoto": {
+    "position": "助教",
+    "name_ja": "岡本 真",
+    "name_en": "OKAMOTO Makoto",
+    "name_kana": "おかもと まこと",
+    "researches": [
+      {
+        "ja": "日本中世後期・近世初期対外関係史研究"
+      }
+    ],
+    "main": "tokushu",
+    "also": []
+  },
+  "yoko": {
+    "position": "教授",
+    "name_ja": "松井 洋子",
+    "name_en": "MATSUI Yoko",
+    "name_kana": "まつい ようこ",
+    "researches": [
+      {
+        "ja": "日本近世史"
+      }
+    ],
+    "main": "tokushu",
+    "also": []
+  },
+  "fuyuko": {
+    "position": "准教授",
+    "name_ja": "松方 冬子",
+    "name_en": "MATSUKATA Fuyuko",
+    "name_kana": "まつかた ふゆこ",
+    "researches": [
+      {
+        "ja": "行動する人の歴史、外交の世界史、概念史（翻訳としての蘭学史）、近世日本の対外関係史、近世日本の武家社会"
+      }
+    ],
+    "main": "tokushu",
+    "also": [],
+    "url" : "http://www.hi.u-tokyo.ac.jp/personal/fuyuko/index.html"
+  },
+  "ndaito": {
+    "position": "助教",
+    "name_ja": "大東 敬典",
+    "name_en": "DAITO Norifumi",
+    "name_kana": "だいとう のりふみ",
+    "researches": [
+      {
+        "ja": "近世日本対外関係史の研究、インド洋史研究"
+      }
+    ],
+    "main": "tokushu",
+    "also": []
+  },
+  "ohyama": {
+    "position": "客員教授",
+    "name_ja": "大山 航",
+    "name_en": "OHYAMA Wataru",
+    "name_kana": "おおやま わたる",
+    "researches": [
+      {
+        "ja": "画像情報学、メディア情報処理の研究"
+      }
+    ],
+    "main": "gazo",
+    "also": [],
+    "attribution" : "埼玉工業大学"
+  }
+}
