@@ -62,7 +62,7 @@ Vue.component('LayoutAbout', {
       if(data.includes("hi.u-tokyo.ac.jp")){
         return data
       }
-      return this.baseUrl + '/' + data + "/" + (this.lang == "en" ? "en/" :  "")
+      return this.baseUrl + '/' + (this.lang == "en" ? "en/" :  "") + data + "/"
     },
     $t(data) {
       if (this.dict[data]) {

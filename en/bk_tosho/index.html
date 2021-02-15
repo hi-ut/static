@@ -4,8 +4,8 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
   <title>
-   古代史料部門 - 東京大学史料編纂所 | Historiographical Institute The
-      University of Tokyo
+   News - 東京大学史料編纂所 | Historiographical
+      Institute The University of Tokyo
   </title>
   <meta content="ie=edge" data-n-head="ssr" http-equiv="x-ua-compatible"/>
   <meta content="width=device-width, initial-scale=1" data-n-head="ssr" name="viewport"/>
@@ -28,111 +28,91 @@
   <link href="https://fonts.gstatic.com" rel="preconnect"/>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap" rel="stylesheet"/>
   <link href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css" rel="stylesheet"/>
-  <link href="../assets/css/style.css" rel="stylesheet"/>
-  <script src="../assets/js/vue.js">
+  <link href="../../assets/css/style.css" rel="stylesheet"/>
+  <script src="../../assets/js/vue.js">
   </script>
-  <script src="../assets/js/axios.min.js">
+  <script src="../../assets/js/axios.min.js">
   </script>
-  <script src="../assets/js/es6-promise.auto.min.js">
+  <script src="../../assets/js/es6-promise.auto.min.js">
   </script>
-  <script src="../assets/js/env.js">
+  <script src="../../assets/js/env.js">
   </script>
-  <script src="../common/layout.js">
+  <script src="../../common/layout.js">
   </script>
-  <script src="../common/components/layout/LayoutAbout.js">
+  <script src="../../common/components/layout/LayoutAbout.js">
   </script>
-  <script src="../common/components/organization/members.js">
+  <script src="../../common/components/organization/members.js">
   </script>
-  <script src="../common/components/organization/member.js">
+  <script src="../../common/components/organization/member.js">
   </script>
  </head>
  <body>
   <div id="app">
    <layout :dict="dict" :lang="lang" :menu="menu">
-    <layout-about :breadcrumbs="breadcrumbs" :dict="dict" :index="0" :lang="lang" :menu="menu" :title="title" v-if="menu &amp;&amp; menu[0]">
-     <p>
-      古代から中世前期を４チームで分担し、『大日本史料』第一編から第五編までと『正倉院文書目録』の編纂を担当しています。
-     </p>
-     <p>
-      『大日本史料』は六国史のあとをうけて、仁和３年（887）の宇多天皇の践祚から第一編が始まり、第五編は鎌倉時代の末までを扱います。このうち第一編と第四編は一応の編纂を終えました。第一編については別冊補遺四冊を刊行し、データベース等による公開に切り換え、新たに「九世紀編年史料」（仮題）の編纂を進めています。第四編の別冊補遺は一冊刊行したところで中断しています。
-     </p>
-     <p>
-      『正倉院文書目録』は、わが国最古の古文書群である「正倉院文書」について、文字のみならず料紙の状態、接続の復元など様々な情報について調査してきた成果をまとめたものです。加えて、天皇家・公家の文庫・宝蔵研究の推進も担っています。
-     </p>
+    <layout-about :breadcrumbs="breadcrumbs" :dict="dict" :index="3" :lang="lang" :menu="menu" :title="title" v-if="menu &amp;&amp; menu[0]">
      <h2 class="h03">
-      刊行物 （2009 ～ 2018年度）
+      Test
      </h2>
-     <ul class="mb-5">
-      <li>
-       『大日本史料　第二編』　　30・31
-      </li>
-      <li>
-       『大日本史料　第三編』　　29
-      </li>
-      <li>
-       『大日本史料　第五編』　　34・35・36
-      </li>
-      <li>
-       『正倉院文書目録』　　　 　6・7
-      </li>
-      <li>
-       『大日本古記録　陽明文庫本勘例』上
-      </li>
-     </ul>
-     <div class="text-center">
-      <img :height="300" class="mb-2" contain="" src="./images/gebumi.jpg"/>
-     </div>
-     <p class="text-center">
-      尾張国郡司百姓等解文（史料編纂所所蔵）
+     <p>
+      This is English Page.
      </p>
-     <members :dict="dict" :id="id" :items="items" :lang="lang">
-     </members>
     </layout-about>
    </layout>
   </div>
   <script>
    new Vue({
-        el: '#app',
+        el: "#app",
         methods: {
           $t(data) {
+            console.log(this.dict);
             if (this.dict[data]) {
-              return this.dict[data]
+              return this.dict[data];
             } else {
-              return data
+              return data;
             }
           },
         },
-        data: {
-          lang: 'ja',
-          title: '',
-          baseUrl: '',
-          items: [],
-          id: '',
-          dict: {},
-          menu: [],
-          baseUrl: process.env.BASE_URL,
-          breadcrumbs: [{ text: "ご案内", name: "about" }],
+        data() {
+          return {
+            dir: "tosho",
+            lang: "en",
+            items: [],
+            id: "",
+            dict: {},
+            menu: [],
+            baseUrl: process.env.BASE_URL,
+          };
+        },
+        computed: {
+          title: function () {
+            return "Site Title";
+          },
+          breadcrumbs: function () {
+            return [
+              {
+                text: "Parent Directory",
+                name: "tosho",
+              },
+            ];
+          },
         },
         async created() {
-          var self = this
-          await axios
-            .get(this.baseUrl + '/data/lang/ja.json')
-            .then(function (res) {
-              self.dict = res.data
-            })
-          await axios.get('./data/items.json').then(function (res) {
-            const data = res.data
-            self.items = data.items
-            self.id = data.id
-            self.title = self.$t(data.title)
-          })
-          await axios
-            .get(this.baseUrl + '/data/data.json')
-            .then(function (res) {
-              self.menu = res.data
-            })
+          const dict = await axios.get(
+            this.baseUrl + "/data/lang/" + this.lang + ".json"
+          );
+          this.dict = dict.data;
+
+          const result = await axios.get(this.baseUrl + "/data/data.json");
+          const menu = result.data;
+          const result2 = await axios.get(
+            this.baseUrl + "/tosho/data/menu.json"
+          );
+          const extra = result2.data;
+
+          menu[3].children = extra;
+          this.menu = menu;
         },
-      })
+      });
   </script>
  </body>
 </html>

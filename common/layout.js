@@ -67,7 +67,7 @@ Vue.component('Layout', {
         return data
       }
       
-      return this.baseUrl + '/' + data + "/" + (this.lang == "en" ? "en/" :  "")
+      return this.baseUrl + '/' + (this.lang == "en" ? "en/" :  "") + data + "/"
     },
     switchLocalePath(lang) {
       return this.baseUrl + "/" + (lang == "en" ? "en/" :  "")
@@ -151,22 +151,29 @@ Vue.component('Layout', {
 
         <ul class="menu">
           <template v-for="(item, key) in items">
-            <template v-if="item.to || item.href">
-              <li v-if="item.lang.includes(lang)" :key="key">
-                <template v-if="item.href">
-                  <a :href="getHiPath(item.href)">{{ $t(item.label) }}</a>
-                </template>
+            <template
+              v-if="
+                (item.to || item.href) &&
+                item.label != 'ニュース' &&
+                item.label != 'よくあるご質問'
+              "
+            >
+              <template v-if="item.to || item.href">
+                <li v-if="item.lang.includes(lang)" :key="key">
+                  <template v-if="item.href">
+                    <a :href="getHiPath(item.href)">{{ $t(item.label) }}</a>
+                  </template>
 
-                <template v-else>
-                  <a :href="localePath(item.to)">{{
-                    $t(item.label)
-                  }}</a>
-                  
-                </template>
-              </li>
+                  <template v-else>
+                    <a :href="localePath(item.to)">{{
+                      $t(item.label)
+                    }}</a>
+                    
+                  </template>
+                </li>
+              </template>
             </template>
           </template>
-
           
         </ul>
 

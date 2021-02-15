@@ -86,7 +86,7 @@ Vue.component('Member', {
 </div>
 </template>
 <ul v-if="lang == 'ja'" class="ml-4">
-<li v-for="(res, index3) in person.researches" :key="index3">□ <template v-if="res.url">
+<li v-for="(res, index3) in person.researches" :key="index3"><template v-if="res.url">
       <a :href="res.url">{{ res.ja }}</a>
       <v-icon v-if="false">mdi-open-in-new</v-icon>
     </template> <template v-else>

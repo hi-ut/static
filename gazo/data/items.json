@@ -1,17 +1,17 @@
 { "items" : [
   {
   "label": "絵画史料分野",
-  "en" : "センター長",
+  "en" : "",
   "children": ["toshiko", "fujiwara", "inada"]
 },
 {
   "label": "画像史料分野",
-  "en" : "collect information about the historical materials",
+  "en" : "",
   "children": ["sugimori", "kuroshima"]
 },
 {
   "label": "古文書画像分野",
-  "en" : "information system of digitized images",
+  "en" : "",
   "children": ["inoue", "ohyama"]
 }
 ],

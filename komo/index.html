@@ -1,123 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
-    />
-
-    <title>古文書古記録部 - 東京大学史料編纂所 | Historiographical Institute The University of Tokyo</title>
-
-    <meta data-n-head="ssr" http-equiv="x-ua-compatible" content="ie=edge">
-    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
-    <meta data-n-head="ssr" name="format-detection" content="telephone=no, email=no, address=no">
-    <meta data-n-head="ssr" data-hid="description" name="description" content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。">
-    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="東京大学史料編纂所, Historiographical Institute, 東京大学, The University of Tokyo">
-    <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo">
-    <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website">
-    <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="/">
-    <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo">
-    <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。">
-    <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="/img/ogp/home.jpg">
-    <meta data-n-head="ssr" name="twitter:card" content="summary_large_image">
-    <meta data-n-head="ssr" name="apple-mobile-web-app-capable" content="yes">
-    <meta data-n-head="ssr" name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
-    <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
-    <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo">
-    <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#ffffff">
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css"
-      rel="stylesheet"
-    />
-
-    <link href="../assets/css/style.css" rel="stylesheet" />
-
-    <script src="../assets/js/vue.js"></script>
-    <script src="../assets/js/axios.min.js"></script>
-    <script src="../assets/js/es6-promise.auto.min.js"></script>
-
-    <script src="../assets/js/env.js"></script>
-
-    <script src="../common/layout.js"></script>
-    <script src="../common/components/layout/LayoutAbout.js"></script>
-
-    <script src="../common/components/organization/members.js"></script>
-    <script src="../common/components/organization/member.js"></script>
-  </head>
-  <body>
-    <div id="app">
-      <layout :dict="dict" :lang="lang" :menu="menu">
-        <layout-about
-        v-if="menu && menu[0]"
-        :title="title"
-        :lang="lang"
-        :dict="dict"
-        :menu="menu"
-        :index="0"
-        :breadcrumbs="breadcrumbs"
-      >
-            <p>
-              　公家・武家・寺社に伝った史料は、前近代の日本史を研究する上で不可欠の素材です。古文書分野は武家・寺社の文書、古記録分野はおもに公家の日記について、調査研究と史料集編纂出版をします。
-            </p>
-
-            <p>
-              　原本や質の良い写本を詳しく調べ、くずし字を解読し精確なテキストを確定するだけでなく、散逸した文書・日記を本来の姿に復元することで、史料の「再発見」につなげます。日記の裏に残された文書の解読や、多数の史料のまとまりの中にひとつひとつの史料を位置づけ直すことで、さまざまな情報を引き出すよう努めています。奥行きのある史料学の進展に寄与することが本部門の課題です。
-            </p>
-
-            <p>
-              　その成果は、書籍だけでなく、フルテキストデータベース、古文書ユニオンカタログデータベースを通じて、広く発信しています。
-            </p>
-
-            <h2 class="my-5">刊行物 （2005 ～ 2019 年度）</h2>
-
-            <ul class="mb-5">
-              <li>『大日本古文書　家わけ第10　東寺文書』　　14・15・16・17</li>
-              <li>『大日本古文書　家わけ第17　大徳寺文書』　別集真珠庵文書7・8　徳禅寺文書1</li>
-              <li>『大日本古文書　家わけ第18　東大寺文書』　20・21・22・23・24</li>
-              <li>『大日本古文書　家わけ第19　醍醐寺文書』　14・15・16</li>
-              <li>『大日本古文書　家わけ第22　益田家文書』　3・4　　［デジタル版面（大日本古文書のみ）］</li>
-              <li>『大日本古記録　中右記』　5・6・7・別巻</li>
-              <li>『大日本古記録　愚昧記』　上・中・下（完）</li>
-              <li>『大日本古記録　民経記』　10（完）</li>
-              <li>『大日本古記録　実躬卿記』　5・6・7・8・9</li>
-              <li>『大日本古記録　後深心院関白記』　2・3・4・5・6(完)</li>
-              <li>『大日本古記録　薩戒記』　3・4・5・6</li>
-              <li>『大日本古記録　後法成寺関白記』　3・4（完）</li>
-              <li>『大日本古記録　中院一品記』　上</li>
-            </ul>
-
-            <div class="text-center">
-              <img
-                class="mb-2"
-                :height="300"
-                contain
-                src="./images/about_hi_gumai.jpg"
-              />
-            </div>
-            <p class="text-center">愚昧記嘉応２年</p>
-
-            <members :items="items" :id="id" :lang="lang" :dict="dict" />
-          </layout-about>
-      </layout>
-    </div>
-
-    
-
-    <script>
-      new Vue({
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
+  <title>
+   古文書古記録部 - 東京大学史料編纂所 | Historiographical Institute The University of Tokyo
+  </title>
+  <meta content="ie=edge" data-n-head="ssr" http-equiv="x-ua-compatible"/>
+  <meta content="width=device-width, initial-scale=1" data-n-head="ssr" name="viewport"/>
+  <meta content="telephone=no, email=no, address=no" data-n-head="ssr" name="format-detection"/>
+  <meta content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。" data-hid="description" data-n-head="ssr" name="description"/>
+  <meta content="東京大学史料編纂所, Historiographical Institute, 東京大学, The University of Tokyo" data-hid="keywords" data-n-head="ssr" name="keywords"/>
+  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="og:site_name" data-n-head="ssr" property="og:site_name"/>
+  <meta content="website" data-hid="og:type" data-n-head="ssr" property="og:type"/>
+  <meta content="/" data-hid="og:url" data-n-head="ssr" property="og:url"/>
+  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="og:title" data-n-head="ssr" property="og:title"/>
+  <meta content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。" data-hid="og:description" data-n-head="ssr" property="og:description"/>
+  <meta content="/img/ogp/home.jpg" data-hid="og:image" data-n-head="ssr" property="og:image"/>
+  <meta content="summary_large_image" data-n-head="ssr" name="twitter:card"/>
+  <meta content="yes" data-n-head="ssr" name="apple-mobile-web-app-capable"/>
+  <meta content="black-translucent" data-n-head="ssr" name="apple-mobile-web-app-status-bar-style"/>
+  <meta charset="utf-8" data-hid="charset" data-n-head="ssr"/>
+  <meta content="yes" data-hid="mobile-web-app-capable" data-n-head="ssr" name="mobile-web-app-capable"/>
+  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="apple-mobile-web-app-title" data-n-head="ssr" name="apple-mobile-web-app-title"/>
+  <meta content="#ffffff" data-hid="theme-color" data-n-head="ssr" name="theme-color"/>
+  <link href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap" rel="stylesheet"/>
+  <link href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css" rel="stylesheet"/>
+  <link href="../assets/css/style.css" rel="stylesheet"/>
+  <script src="../assets/js/vue.js">
+  </script>
+  <script src="../assets/js/axios.min.js">
+  </script>
+  <script src="../assets/js/es6-promise.auto.min.js">
+  </script>
+  <script src="../assets/js/env.js">
+  </script>
+  <script src="../common/layout.js">
+  </script>
+  <script src="../common/components/layout/LayoutAbout.js">
+  </script>
+  <script src="../common/components/organization/members.js">
+  </script>
+  <script src="../common/components/organization/member.js">
+  </script>
+ </head>
+ <body>
+  <div id="app">
+   <layout :dict="dict" :lang="lang" :menu="menu">
+    <layout-about :breadcrumbs="breadcrumbs" :dict="dict" :index="0" :lang="lang" :menu="menu" :title="title" v-if="menu &amp;&amp; menu[0]">
+     <p>
+      公家・武家・寺社に伝った史料は、前近代の日本史を研究する上で不可欠の素材です。古文書分野は武家・寺社の文書、古記録分野はおもに公家の日記について、調査研究と史料集編纂出版をします。
+     </p>
+     <p>
+      原本や質の良い写本を詳しく調べ、くずし字を解読し精確なテキストを確定するだけでなく、散逸した文書・日記を本来の姿に復元することで、史料の「再発見」につなげます。日記の裏に残された文書の解読や、多数の史料のまとまりの中にひとつひとつの史料を位置づけ直すことで、さまざまな情報を引き出すよう努めています。奥行きのある史料学の進展に寄与することが本部門の課題です。
+     </p>
+     <p>
+      その成果は、書籍だけでなく、フルテキストデータベース、古文書ユニオンカタログデータベースを通じて、広く発信しています。
+     </p>
+     <h2 class="my-5">
+      刊行物 （2005 ～ 2019 年度）
+     </h2>
+     <ul class="mb-5">
+      <li>
+       『大日本古文書　家わけ第10　東寺文書』　　14・15・16・17
+      </li>
+      <li>
+       『大日本古文書　家わけ第17　大徳寺文書』　別集真珠庵文書7・8　徳禅寺文書1
+      </li>
+      <li>
+       『大日本古文書　家わけ第18　東大寺文書』　20・21・22・23・24
+      </li>
+      <li>
+       『大日本古文書　家わけ第19　醍醐寺文書』　14・15・16
+      </li>
+      <li>
+       『大日本古文書　家わけ第22　益田家文書』　3・4　　［デジタル版面（大日本古文書のみ）］
+      </li>
+      <li>
+       『大日本古記録　中右記』　5・6・7・別巻
+      </li>
+      <li>
+       『大日本古記録　愚昧記』　上・中・下（完）
+      </li>
+      <li>
+       『大日本古記録　民経記』　10（完）
+      </li>
+      <li>
+       『大日本古記録　実躬卿記』　5・6・7・8・9
+      </li>
+      <li>
+       『大日本古記録　後深心院関白記』　2・3・4・5・6(完)
+      </li>
+      <li>
+       『大日本古記録　薩戒記』　3・4・5・6
+      </li>
+      <li>
+       『大日本古記録　後法成寺関白記』　3・4（完）
+      </li>
+      <li>
+       『大日本古記録　中院一品記』　上
+      </li>
+     </ul>
+     <div class="text-center">
+      <img :height="300" class="mb-2" contain="" src="./images/about_hi_gumai.jpg"/>
+     </div>
+     <p class="text-center">
+      愚昧記嘉応２年
+     </p>
+     <members :dict="dict" :id="id" :items="items" :lang="lang">
+     </members>
+    </layout-about>
+   </layout>
+  </div>
+  <script>
+   new Vue({
         el: "#app",
         methods: {
           $t(data) {
@@ -160,6 +157,6 @@
             });
         },
       });
-    </script>
-  </body>
+  </script>
+ </body>
 </html>
