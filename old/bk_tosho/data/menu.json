@@ -1,0 +1,29 @@
+[
+    { "label": "お知らせ", "href": "tosho", "lang": ["ja", "en"] },
+    {
+        "label": " 図書室のサービス案内",
+        "href": "tosho/annai",
+        "lang": ["ja"]
+    },
+    {
+        "label": "図書室利用（閲覧手続き）",
+        "href": "tosho/etsuran",
+        "lang": ["ja"]
+    },
+
+    {
+        "label": "図書室利用（複製・掲載・放映等）",
+        "href": "tosho/shiryoriyo",
+        "lang": ["ja"]
+    },
+    {
+        "label": "所蔵史料の検索",
+        "href": "tosho/kensaku",
+        "lang": ["ja"]
+    },
+    {
+        "label": "お問い合わせ・連絡先",
+        "href": "tosho/toiawase",
+        "lang": ["ja"]
+    }
+]

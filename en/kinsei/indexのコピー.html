@@ -7,7 +7,7 @@
       name="viewport"
     />
     <title>
-      Special Materials Department - 東京大学史料編纂所 | Historiographical
+      Early Modern Materials Department - 東京大学史料編纂所 | Historiographical
       Institute The University of Tokyo
     </title>
     <meta content="ie=edge" data-n-head="ssr" http-equiv="x-ua-compatible" />
@@ -123,13 +123,7 @@
         >
           <!-- ここより下を編集してください。 -->
           <p>
-            The Special Materials Department has two distinct sections. One focuses on source analysis (shiryogaku) and historical geography (rekishi chiri), while the other deals with historical documents kept outside of Japan or written in foreign languages.</p>
-
-            <p>The former analyzes on Japanese monograms (kaō) and publishes collected monograms in the Kao Kagami.</p>
-
-              <p>The latter, or the Overseas Materials Section, publishes Jesuit Letters Concerning Japan (-1559, original texts mainly in Portuguese and Spanish) and Diaries Kept by the Heads of the Dutch Factory in Japan (-1651, original texts in Dutch) with Japanese translation. These and comparable European sources enable us to view Japan’s relationships with the rest of Asia in the late medieval- early modern periods. For more details, see <a href="http://www.hi.u-tokyo.ac.jp/english/publication/kaigai-e.html">publications page</a>.</p>
-
-                <p>The Overseas Materials Section is also engaged in cataloguing microfilmed documents acquired from overseas. Since 1954, the Historiographical Institute has collected microfilms of unpublished documents concerning Japan kept in overseas libraries and archives. This project was entrusted to us by the Japan Academy, and subsidized by UAI (Union Academique Internationale) and UNESCO-CIPSH until 1985. Since 1985 the Historiographical Institute has continued to collect overseas documents with support from the Japanese government (KAKENHI by JSPS: Japan Society for the Promotion of Science, and MEXT: Ministry of Education, Culture, Sports, Science, and Technology) and other funding organizations. Recently, we have been engaged in the digitization of the microfilm collection as well as acquiring newly digitized materials.
+            A wide range of document collections are handled by this department with work divided among three groups. The first group is responsible for preparing Part XII of the Dai Nihon Shiryo series, which includes early Edo period events in chronological order. The second group handles political and cultural records for the entire early modern period, publishing them as the Dai Nihon Kinsei Shiryo series and as the selections in the Dai Nihon Kokiroku. The third group focuses on the end of the Edo-period and the Meiji Restoration. It is responsible for producing the Dai Nihon Ishin Shiryo and a selection of the Dai Nihon Komonjo.
           </p>
           <!-- ここより上を編集してください。 -->
           <members :dict="dict" :id="id" :items="items" :lang="lang"> </members>
@@ -137,7 +131,7 @@
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "Special Materials Department"; //③タイトル編集
+      const SITE_TITLE = "Early Modern Materials Department"; //③タイトル編集
       const SITE_LANG = "en"; //④言語
       new Vue({
         el: "#app",
@@ -152,7 +146,7 @@
         },
         data() {
           return {
-            dir: "tokushu",
+            dir: "kinsei",
             title: SITE_TITLE,
             lang: SITE_LANG,
             items: [],
@@ -174,7 +168,7 @@
             .get(this.baseUrl + "/" + this.dir + "/data/items.json")
             .then(function (res) {
               const data = res.data;
-              self.items = (self.lang === "en" && data.items_en) ? data.items_en : data.items;
+              self.items = data.items;
               self.id = data.id;
               self.title = self.$t(data.title);
             });

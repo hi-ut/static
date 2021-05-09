@@ -18,7 +18,13 @@
     },
     {
       "label": "中世禅籍史料研究プロジェクト",
-      "children": ["ebara", "yanbe", "maekawa", "kawamoto"]
+      "children": ["ebara", "yanbe", "maegawa", "kawamoto"]
+    }
+  ],
+  "items_en": [
+    {
+      "label": "",
+      "children": ["ebara", "yanbe", "yoko", "fuyuko", "mihoko", "maegawa", "kawamoto", "mokamoto", "ndaito"]
     }
   ],
   "id": "tokushu",

@@ -7,7 +7,7 @@
       name="viewport"
     />
     <title>
-      IR・広報室 - 東京大学史料編纂所 | Historiographical Institute The
+      Library Home - 東京大学史料編纂所 | Historiographical Institute The
       University of Tokyo
     </title>
     <meta content="ie=edge" data-n-head="ssr" http-equiv="x-ua-compatible" />
@@ -95,7 +95,10 @@
       rel="stylesheet"
     />
     <link href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
     <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
     <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
     <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
@@ -106,24 +109,53 @@
   </head>
   <body>
     <div id="app">
-      <layout 
-        :lang="lang" 
-        :breadcrumbs="breadcrumbs"
-        :index="0"
-        :title="title">
-        <p>ほげほげ</p>
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :title="title">
+        <!-- ②本文開始位置 -->
+        <h2 class="h03">
+          Historiographical Institute Library, The University of Tokyo
+        </h2>
+        <ul class="mtx">
+          <li class="mtx">
+            <a href="service/index.html">Library Services</a> -About our library
+            and services
+          </li>
+          <li class="mtx">
+            <a href="visit/index.html">Visiting HI Library</a> -Library hours,
+            Reservation form
+          </li>
+          <li class="mtx">
+            <a href="use/index.html">Using Our Collections</a> -Permission to
+            publish or broadcast, Duplication
+          </li>
+          <li class="mtx">
+            <a href="contact/index.html">Contact us</a> -Inquiry form, Request
+            form
+          </li>
+        </ul>
+        <p></p>
+        <h2 class="h03 mt-10">Information</h2>
+        <h3 class="h04">Important Notice COVID-19 update (Jan. 8, 2021)</h3>
+        <p class="mtx">
+          <strong>For UTokyo members</strong>: Reservation required. For
+          details, please refer to
+          <a href="visit/utokyo/index.html">this page</a>.<br /><br />
+          <strong>For Non-members of UTokyo</strong>: HI Library is temporarily
+          closed for public users including UTokyo alumni. Announcement of
+          re-opening will be posted on our website.<br /><br />
+        </p>
+        <!-- 本文終了位置-->
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "IR・広報室"; //③タイトル編集
-      const SITE_LANG = "ja"; //④言語
+      const SITE_TITLE = "Library Home"; //③タイトル編集
+      const SITE_LANG = "en"; //④言語
       new Vue({
         el: "#app",
         data() {
           return {
             lang: SITE_LANG,
             title: SITE_TITLE,
-            breadcrumbs: [{ text: "ご案内", name: "about" }]
+            breadcrumbs: [{ text: "Library", name: "tosho" }],
           };
         },
       });
