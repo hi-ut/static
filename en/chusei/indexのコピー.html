@@ -7,8 +7,8 @@
       name="viewport"
     />
     <title>
-      Medieval Materials Department - 東京大学史料編纂所 | Historiographical Institute The
-      University of Tokyo
+      Medieval Materials Department - 東京大学史料編纂所 | Historiographical
+      Institute The University of Tokyo
     </title>
     <meta content="ie=edge" data-n-head="ssr" http-equiv="x-ua-compatible" />
     <meta
@@ -90,33 +90,44 @@
       data-n-head="ssr"
       name="theme-color"
     />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
-    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
-    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
-    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
-
-    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
-    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
-    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+    <link
+      href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+    <script src="../../assets/js/vue.js"></script>
+    <script src="../../assets/js/axios.min.js"></script>
+    <script src="../../assets/js/es6-promise.auto.min.js"></script>
+    <script src="../../assets/js/env.js"></script>
+    <script src="../../common/layout.js"></script>
+    <script src="../../common/components/layout/LayoutAbout.js"></script>
+    <script src="../../common/components/organization/members.js"></script>
+    <script src="../../common/components/organization/member.js"></script>
   </head>
   <body>
     <div id="app">
-      <layout 
-        :lang="lang" 
-        :breadcrumbs="breadcrumbs"
-        :index="0"
-        :title="title">
-        <!-- 編集開始位置 -->
-        <p>
-          Beginning with the Kenmu Restoration in 1333 through the establishment of the Tokugawa bakufu in 1603, this department is responsible for the materials. The Sources during these centuries are published in Part VI-XI of the Dai Nihon Shiryo series.
-        </p>
-        <members :id="id" :lang="lang"></members>
-        <!-- 編集終了位置 -->
+      <layout :dict="dict" :lang="lang" :menu="menu">
+        <layout-about
+          :breadcrumbs="breadcrumbs"
+          :dict="dict"
+          :index="0"
+          :lang="lang"
+          :menu="menu"
+          :title="title"
+          v-if="menu &amp;&amp; menu[0]"
+        >
+          <!-- ここより下を編集してください。 -->
+          <p>
+            Beginning with the Kenmu Restoration in 1333 through the establishment of the Tokugawa bakufu in 1603, this department is responsible for the materials. The Sources during these centuries are published in Part VI-XI of the Dai Nihon Shiryo series.
+          </p>
+          <!-- ここより上を編集してください。 -->
+          <members :dict="dict" :id="id" :items="items" :lang="lang"> </members>
+        </layout-about>
       </layout>
     </div>
     <script>
@@ -124,13 +135,48 @@
       const SITE_LANG = "en"; //④言語
       new Vue({
         el: "#app",
+        methods: {
+          $t(data) {
+            if (this.dict[data]) {
+              return this.dict[data];
+            } else {
+              return data;
+            }
+          },
+        },
         data() {
           return {
-            id: "chusei",
-            lang: SITE_LANG,
+            dir: "chusei",
             title: SITE_TITLE,
-            breadcrumbs: [{ text: "ご案内", name: "about" }]
+            lang: SITE_LANG,
+            items: [],
+            id: "",
+            dict: {},
+            menu: [],
+            baseUrl: process.env.BASE_URL,
+            breadcrumbs: [{ text: "About", name: "about" }],
           };
+        },
+        async created() {
+          var self = this;
+          await axios
+            .get(this.baseUrl + "/data/lang/" + this.lang + ".json")
+            .then(function (res) {
+              self.dict = res.data;
+            });
+          await axios
+            .get(this.baseUrl + "/" + this.dir + "/data/items.json")
+            .then(function (res) {
+              const data = res.data;
+              self.items = data.items;
+              self.id = data.id;
+              self.title = self.$t(data.title);
+            });
+          await axios
+            .get(this.baseUrl + "/data/data.json")
+            .then(function (res) {
+              self.menu = res.data;
+            });
         },
       });
     </script>

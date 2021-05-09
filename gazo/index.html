@@ -4,259 +4,209 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
   <title>
-   画像史料解析センター - 東京大学史料編纂所 | Historiographical Institute
-      The University of Tokyo
+    画像史料解析センター - 東京大学史料編纂所 | Historiographical
+      Institute The University of Tokyo
   </title>
-  <meta content="ie=edge" data-n-head="ssr" http-equiv="x-ua-compatible"/>
-  <meta content="width=device-width, initial-scale=1" data-n-head="ssr" name="viewport"/>
-  <meta content="telephone=no, email=no, address=no" data-n-head="ssr" name="format-detection"/>
-  <meta content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。" data-hid="description" data-n-head="ssr" name="description"/>
-  <meta content="東京大学史料編纂所, Historiographical Institute, 東京大学, The University of Tokyo" data-hid="keywords" data-n-head="ssr" name="keywords"/>
-  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="og:site_name" data-n-head="ssr" property="og:site_name"/>
-  <meta content="website" data-hid="og:type" data-n-head="ssr" property="og:type"/>
-  <meta content="/" data-hid="og:url" data-n-head="ssr" property="og:url"/>
-  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="og:title" data-n-head="ssr" property="og:title"/>
-  <meta content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。" data-hid="og:description" data-n-head="ssr" property="og:description"/>
-  <meta content="/img/ogp/home.jpg" data-hid="og:image" data-n-head="ssr" property="og:image"/>
-  <meta content="summary_large_image" data-n-head="ssr" name="twitter:card"/>
-  <meta content="yes" data-n-head="ssr" name="apple-mobile-web-app-capable"/>
-  <meta content="black-translucent" data-n-head="ssr" name="apple-mobile-web-app-status-bar-style"/>
-  <meta charset="utf-8" data-hid="charset" data-n-head="ssr"/>
-  <meta content="yes" data-hid="mobile-web-app-capable" data-n-head="ssr" name="mobile-web-app-capable"/>
-  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="apple-mobile-web-app-title" data-n-head="ssr" name="apple-mobile-web-app-title"/>
-  <meta content="#ffffff" data-hid="theme-color" data-n-head="ssr" name="theme-color"/>
-  <link href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap" rel="stylesheet"/>
-  <link href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css" rel="stylesheet"/>
-  <link href="../assets/css/style.css" rel="stylesheet"/>
-  <script src="../assets/js/vue.js">
-  </script>
-  <script src="../assets/js/axios.min.js">
-  </script>
-  <script src="../assets/js/es6-promise.auto.min.js">
-  </script>
-  <script src="../assets/js/env.js">
-  </script>
-  <script src="../common/layout.js">
-  </script>
-  <script src="../common/components/layout/LayoutAbout.js">
-  </script>
-  <script src="../common/components/organization/members.js">
-  </script>
-  <script src="../common/components/organization/member.js">
-  </script>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+  rel="stylesheet"
+/>
+<link href="https://fonts.gstatic.com" rel="preconnect" />
+<link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
+<script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+<script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+<script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+<script src="https://hi-ut.github.io/assets/js/env.js"></script>
+<script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+<script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
  </head>
- <body>
-  <div id="app">
-   <layout :dict="dict" :lang="lang" :menu="menu">
-    <layout-about :breadcrumbs="breadcrumbs" :dict="dict" :index="0" :lang="lang" :menu="menu" :title="title" v-if="menu &amp;&amp; menu[0]">
-     <h3 class="h04">
-      設立の経緯
-     </h3>
-     <p>
-      コンピュータによる画像処理の飛躍的発展を前提として、絵画・絵図史料や古写真等の各種画像史料の歴史学的な解析・研究という近年の日本史研究の課題を実現するため、本センターは、1997（平成9）年度に附属施設として設置され、2017（平成29）年度に20周年を迎えました。
-     </p>
-     <h3 class="h04">
-      組織と目的
-     </h3>
-     <p>
-      本センターは、本所教授の中から選出されセンターの管理運営を総括するセンター長、及びセンターの円滑な運営のため、本所教員等から構成される運営委員会が設けられています。その目的は、「日本史に関する各種画像史料及び画像史料情報を収集・整理して系統的に蓄積するとともに、電子計算機等による画像情報処理方法を生かして解析・研究を行い、その成果を学内外に公開すること」（センター規則第２条）にあります。
-     </p>
-     <h3 class="h04">
-      研究内容
-     </h3>
-     <p>
-      長年にわたる本所の史料収集活動は、各種画像史料と画像史料情報を、模写・影写・拓本・写真撮影等の多様な手段によって蓄積してきました。そうした歴史に立って、本所の五大部門と前近代日本史国際情報センターとの有機的な連携態勢をとりながら、本センターは、以下の3
-              分野に関し解析・研究を行います。
-     </p>
-     <p>
-      第1は、肖像画・絵巻・屏風絵・絵図・古地図等を対象とする絵画史料分野です。日本史学の立場から、これらの絵画史料に表現されている歴史事象を解析・研究し、多種多様な歴史情報の把握を可能にする絵画史料の史料学を確立していくことを課題としています。現存する荘園絵図の良質な図版を提供することを目的とし、荘園絵図プロジェクトのスタッフが制作を担当する『日本荘園絵図聚影』は1998
-              年度から本センターの出版物となり、2015 年度には、その釈文編第2
-              冊目の中世編1が刊行されました。
-     </p>
-     <p>
-      第2は、錦絵や摺物（瓦版）、古写真等の近世後期から近代初頭にかけての画像史料分野です。これらの史料収集・整理を先行させながら、個々の画像史料から歴史情報を汲み取り、絵師・詞書作者・版元の確定や流通プロセスと需要層等の分析も行います。とくに、錦絵については、本センターで作成した錦絵目録データベースを中核として、日本全国の公的機関が既に公開している錦絵のインターネット画像とリンクさせ、書誌情報を共有化できるネットワーク・データベースの構築を進めています。
-     </p>
-     <p>
-      第3は、古文書画像分野です。電子計算機等による画像情報処理方法の発展は、文献史料を画像史料として扱う可能性を生み出しました。古文書の形態論的研究の発展という近年の動向を踏まえ、膨大な点数の古文書をデジタル画像化して、筆跡・花押（サイン）の同定、形態分類等による様式論・機能論の新たな試みを可能にする方法論の研究と具体的な手法の開発を課題としています。また拓本史料を利用した金石文研究にも本格的に着手しています。
-     </p>
-     <p>
-      以上の3分野の諸課題について、本センターは、所員に対してプロジェクト研究を募集し、応募したさまざまなプロジェクト研究が、同時平行的に解析・研究を推進しているのです。
-     </p>
-     <p>
-      また、2003
-              年度からは、大学だけではなく博物館・美術館等の画像史料を研究対象とする研究者との新しい連携・協同で、効果的でかつ豊かな成果を生み出すために、共同研究員の制度を発足させ、活用しています。
-     </p>
-     <p>
-      なお、2007年度には、開設10周年を迎えたことを記念し、研究集会「画像史料研究の成果と課題」を開催するとともに、本センターの活動の主力である各プロジェクトグループの活動の到達点と今後の課題について詳細に記した報告書『画像史料解析センターの成果と課題』を作成しました。→報告書のダウンロード[PDF
-              2.47MB]
-     </p>
-     <p>
-      また、2017年度には、センター設立20周年記念事業として、公開講演会「画像史料の語る日本史」を開催し、『画像史料解析センターの成果と課題
-              Ⅱ―設立20周年記念報告書―』を刊行しました。→報告書のダウンロード[PDF
-              5.1MB]
-     </p>
-     <h2 class="my-5">
-      刊行物（1997 ～ 2019 年度）
-     </h2>
-     <ul>
-      <li>
-       『日本荘園絵図聚影』4（近畿三）・５上（西日本一）・５下（西日本二）・釈文編1（古代）・釈文編2（中世1）
-      </li>
-      <li>
-       『摺物総合編年目録（第２稿）』
-       <br/>
-       入手ご希望の方は、郵便切手350円分（送料用）を同封の上、東京大学史料編纂所画像史料解析センターあてにご注文ください。
-      </li>
-      <li>
-       『風説留中画像史料一覧（稿）』
-       <br/>
-       入手ご希望の方は、郵便切手350円分（送料用）を同封の上、東京大学史料編纂所画像史料解析センターあてにご注文ください。
-      </li>
-      <li>
-       『入来院家文書CD-ROM 版』
-      </li>
-      <li>
-       「画像史料解析センター通信」1 ～ 90号
-       <br/>
-       1998年3月より年４回刊行。配布を希望される機関はご連絡ください。なお個人への配布は行っておりません。
-      </li>
-     </ul>
-     <h2 class="h03">
-      データベース
-     </h2>
-     <ul>
-      <li>
-       「史料編纂所所蔵肖像画模本データベース」
-       <br/>
-       史料編纂所が所蔵する肖像画模本のデータベース。画像の特徴を言葉で検索できるように工夫。
-      </li>
-      <li>
-       「肖像情報データベース」
-       <br/>
-       地方史類、日本史の各種通史、博物館・美術館の図録類から肖像画の所在情報をデータベース化。
-      </li>
-      <li>
-       「双方向型錦絵データベース」
-       <br/>
-       東京大学史料編纂所・静岡県立中央図書館・横浜開港資料館所蔵の錦絵データベース
-       <br/>
-       静岡県立中央図書館2918点、史料編纂所762点、横浜開港資料館939点の書誌情報検索可能。前２館の大半は画像閲覧可能。
-      </li>
-      <li>
-       「摺物データベース」
-       <br/>
-       幕末～明治維新期に刊行された摺物の所在目録・書誌データベース。
-      </li>
-      <li>
-       「古写真データベース」
-       <br/>
-       史料編纂所が所蔵する古写真のデータベース。写真史の観点からも利用できるように配慮。
-      </li>
-      <li>
-       「史料編纂所所蔵荘園絵図模本データベース」
-       <br/>
-       史料編纂所が所蔵する荘園絵図模本のデータベース。高精細画像での閲覧が可能。
-      </li>
-      <li>
-       「歴史絵引データベース」
-       <br/>
-       装束・調度などに関する総合データベース。トレース図添付。
-      </li>
-      <li>
-       「電子くずし字字典データベース」
-      </li>
-     </ul>
-     <h2 class="h03">
-      歴代センター長
-     </h2>
-     <ul>
-      <li>
-       黒田日出男　平成 9 年4 月～平成 9 年8 月（1997）※所長兼任
-      </li>
-      <li>
-       宮地　正人　平成 9 年9 月～平成11 年3 月（1997 ～ 1999）
-      </li>
-      <li>
-       黒田日出男　平成11 年4 月～平成13 年3 月（1999 ～ 2001）
-      </li>
-      <li>
-       黒田日出男　平成13 年4 月～平成15 年3 月（2001 ～ 2003）
-      </li>
-      <li>
-       加藤　友康　平成15 年4 月～平成17 年3 月（2003 ～ 2005）
-      </li>
-      <li>
-       加藤　友康　平成17 年4 月～平成19 年3 月（2005 ～ 2007）
-      </li>
-      <li>
-       林　　　譲　平成19 年4 月～平成21 年3 月（2007 ～ 2009）
-      </li>
-      <li>
-       保谷　　徹　平成21 年4 月～平成22 年3 月（2009 ～ 2010）
-      </li>
-      <li>
-       久留島典子　平成22 年4 月～平成25 年3 月（2010 ～ 2013）
-      </li>
-      <li>
-       林　　　譲　平成25 年4 月～平成27 年3 月（2013 ～ 2015）
-      </li>
-      <li>
-       山口　英男　平成27 年4 月～平成30 年3 月（2015 ～ 2018）
-      </li>
-      <li>
-       高橋　敏子　平成30 年4 月～
-      </li>
-     </ul>
-     <members :dict="dict" :id="id" :items="items" :lang="lang">
-     </members>
-    </layout-about>
-   </layout>
-  </div>
-  <script>
-   new Vue({
+  <body>
+    <div id="app">
+      <layout 
+        :lang="lang" 
+        :breadcrumbs="breadcrumbs"
+        :index="0"
+        :title="title">
+        <h3 class="h04">
+          設立の経緯
+         </h3>
+         <p>
+          コンピュータによる画像処理の飛躍的発展を前提として、絵画・絵図史料や古写真等の各種画像史料の歴史学的な解析・研究という近年の日本史研究の課題を実現するため、本センターは、1997（平成9）年度に附属施設として設置され、2017（平成29）年度に20周年を迎えました。
+         </p>
+         <h3 class="h04">
+          組織と目的
+         </h3>
+         <p>
+          本センターは、本所教授の中から選出されセンターの管理運営を総括するセンター長、及びセンターの円滑な運営のため、本所教員等から構成される運営委員会が設けられています。その目的は、「日本史に関する各種画像史料及び画像史料情報を収集・整理して系統的に蓄積するとともに、電子計算機等による画像情報処理方法を生かして解析・研究を行い、その成果を学内外に公開すること」（センター規則第２条）にあります。
+         </p>
+         <h3 class="h04">
+          研究内容
+         </h3>
+         <p>
+          長年にわたる本所の史料収集活動は、各種画像史料と画像史料情報を、模写・影写・拓本・写真撮影等の多様な手段によって蓄積してきました。そうした歴史に立って、本所の五大部門と前近代日本史国際情報センターとの有機的な連携態勢をとりながら、本センターは、以下の3
+                  分野に関し解析・研究を行います。
+         </p>
+         <p>
+          第1は、肖像画・絵巻・屏風絵・絵図・古地図等を対象とする絵画史料分野です。日本史学の立場から、これらの絵画史料に表現されている歴史事象を解析・研究し、多種多様な歴史情報の把握を可能にする絵画史料の史料学を確立していくことを課題としています。現存する荘園絵図の良質な図版を提供することを目的とし、荘園絵図プロジェクトのスタッフが制作を担当する『日本荘園絵図聚影』は1998
+                  年度から本センターの出版物となり、2015 年度には、その釈文編第2
+                  冊目の中世編1が刊行されました。
+         </p>
+         <p>
+          第2は、錦絵や摺物（瓦版）、古写真等の近世後期から近代初頭にかけての画像史料分野です。これらの史料収集・整理を先行させながら、個々の画像史料から歴史情報を汲み取り、絵師・詞書作者・版元の確定や流通プロセスと需要層等の分析も行います。とくに、錦絵については、本センターで作成した錦絵目録データベースを中核として、日本全国の公的機関が既に公開している錦絵のインターネット画像とリンクさせ、書誌情報を共有化できるネットワーク・データベースの構築を進めています。
+         </p>
+         <p>
+          第3は、古文書画像分野です。電子計算機等による画像情報処理方法の発展は、文献史料を画像史料として扱う可能性を生み出しました。古文書の形態論的研究の発展という近年の動向を踏まえ、膨大な点数の古文書をデジタル画像化して、筆跡・花押（サイン）の同定、形態分類等による様式論・機能論の新たな試みを可能にする方法論の研究と具体的な手法の開発を課題としています。また拓本史料を利用した金石文研究にも本格的に着手しています。
+         </p>
+         <p>
+          以上の3分野の諸課題について、本センターは、所員に対してプロジェクト研究を募集し、応募したさまざまなプロジェクト研究が、同時平行的に解析・研究を推進しているのです。
+         </p>
+         <p>
+          また、2003
+                  年度からは、大学だけではなく博物館・美術館等の画像史料を研究対象とする研究者との新しい連携・協同で、効果的でかつ豊かな成果を生み出すために、共同研究員の制度を発足させ、活用しています。
+         </p>
+         <p>
+          なお、2007年度には、開設10周年を迎えたことを記念し、研究集会「画像史料研究の成果と課題」を開催するとともに、本センターの活動の主力である各プロジェクトグループの活動の到達点と今後の課題について詳細に記した報告書『画像史料解析センターの成果と課題』を作成しました。→報告書のダウンロード[PDF
+                  2.47MB]
+         </p>
+         <p>
+          また、2017年度には、センター設立20周年記念事業として、公開講演会「画像史料の語る日本史」を開催し、『画像史料解析センターの成果と課題
+                  Ⅱ―設立20周年記念報告書―』を刊行しました。→報告書のダウンロード[PDF
+                  5.1MB]
+         </p>
+         <h2 class="h03">
+          刊行物（1997 ～ 2019 年度）
+         </h2>
+         <ul>
+          <li>
+           『日本荘園絵図聚影』4（近畿三）・５上（西日本一）・５下（西日本二）・釈文編1（古代）・釈文編2（中世1）
+          </li>
+          <li>
+           『摺物総合編年目録（第２稿）』
+           <br/>
+           入手ご希望の方は、郵便切手350円分（送料用）を同封の上、東京大学史料編纂所画像史料解析センターあてにご注文ください。
+          </li>
+          <li>
+           『風説留中画像史料一覧（稿）』
+           <br/>
+           入手ご希望の方は、郵便切手350円分（送料用）を同封の上、東京大学史料編纂所画像史料解析センターあてにご注文ください。
+          </li>
+          <li>
+           『入来院家文書CD-ROM 版』
+          </li>
+          <li>
+           「画像史料解析センター通信」1 ～ 90号
+           <br/>
+           1998年3月より年４回刊行。配布を希望される機関はご連絡ください。なお個人への配布は行っておりません。
+          </li>
+         </ul>
+         <h2 class="h03">
+          データベース
+         </h2>
+         <ul>
+          <li>
+           「史料編纂所所蔵肖像画模本データベース」
+           <br/>
+           史料編纂所が所蔵する肖像画模本のデータベース。画像の特徴を言葉で検索できるように工夫。
+          </li>
+          <li>
+           「肖像情報データベース」
+           <br/>
+           地方史類、日本史の各種通史、博物館・美術館の図録類から肖像画の所在情報をデータベース化。
+          </li>
+          <li>
+           「双方向型錦絵データベース」
+           <br/>
+           東京大学史料編纂所・静岡県立中央図書館・横浜開港資料館所蔵の錦絵データベース
+           <br/>
+           静岡県立中央図書館2918点、史料編纂所762点、横浜開港資料館939点の書誌情報検索可能。前２館の大半は画像閲覧可能。
+          </li>
+          <li>
+           「摺物データベース」
+           <br/>
+           幕末～明治維新期に刊行された摺物の所在目録・書誌データベース。
+          </li>
+          <li>
+           「古写真データベース」
+           <br/>
+           史料編纂所が所蔵する古写真のデータベース。写真史の観点からも利用できるように配慮。
+          </li>
+          <li>
+           「史料編纂所所蔵荘園絵図模本データベース」
+           <br/>
+           史料編纂所が所蔵する荘園絵図模本のデータベース。高精細画像での閲覧が可能。
+          </li>
+          <li>
+           「歴史絵引データベース」
+           <br/>
+           装束・調度などに関する総合データベース。トレース図添付。
+          </li>
+          <li>
+           「電子くずし字字典データベース」
+          </li>
+         </ul>
+         <h2 class="h03">
+          歴代センター長
+         </h2>
+         <ul>
+          <li>
+           黒田日出男　平成 9 年4 月～平成 9 年8 月（1997）※所長兼任
+          </li>
+          <li>
+           宮地　正人　平成 9 年9 月～平成11 年3 月（1997 ～ 1999）
+          </li>
+          <li>
+           黒田日出男　平成11 年4 月～平成13 年3 月（1999 ～ 2001）
+          </li>
+          <li>
+           黒田日出男　平成13 年4 月～平成15 年3 月（2001 ～ 2003）
+          </li>
+          <li>
+           加藤　友康　平成15 年4 月～平成17 年3 月（2003 ～ 2005）
+          </li>
+          <li>
+           加藤　友康　平成17 年4 月～平成19 年3 月（2005 ～ 2007）
+          </li>
+          <li>
+           林　　　譲　平成19 年4 月～平成21 年3 月（2007 ～ 2009）
+          </li>
+          <li>
+           保谷　　徹　平成21 年4 月～平成22 年3 月（2009 ～ 2010）
+          </li>
+          <li>
+           久留島典子　平成22 年4 月～平成25 年3 月（2010 ～ 2013）
+          </li>
+          <li>
+           林　　　譲　平成25 年4 月～平成27 年3 月（2013 ～ 2015）
+          </li>
+          <li>
+           山口　英男　平成27 年4 月～平成30 年3 月（2015 ～ 2018）
+          </li>
+          <li>
+           高橋　敏子　平成30 年4 月～令和2 年4 月（2018 ～ 2021）
+          </li>
+          <li>
+            鴨川　達夫　令和2 年4 月～
+           </li>
+         </ul>
+
+        <members :id="id" :lang="lang"></members>
+      </layout>
+    </div>
+    <script>
+      const SITE_TITLE = "画像史料解析センター"; //③タイトル編集
+      const SITE_LANG = "ja"; //④言語
+      new Vue({
         el: "#app",
-        methods: {
-          $t(data) {
-            if (this.dict[data]) {
-              return this.dict[data];
-            } else {
-              return data;
-            }
-          },
-        },
         data() {
           return {
-            lang: "ja",
-            title: "",
-            items: [],
-            id: "",
-            dict: {},
-            menu: [],
-            baseUrl: process.env.BASE_URL,
-            breadcrumbs: [{ text: "ご案内", name: "about" }],
+            id: "gazo",
+            lang: SITE_LANG,
+            title: SITE_TITLE,
+            breadcrumbs: [{ text: "ご案内", name: "about" }]
           };
         },
-        async created() {
-          var self = this;
-          await axios
-            .get(this.baseUrl + "/data/lang/ja.json")
-            .then(function (res) {
-              self.dict = res.data;
-            });
-          await axios.get("./data/items.json").then(function (res) {
-            const data = res.data;
-            self.items = data.items;
-            self.id = data.id;
-            self.title = self.$t(data.title);
-          });
-          await axios
-            .get(this.baseUrl + "/data/data.json")
-            .then(function (res) {
-              self.menu = res.data;
-            });
-        },
       });
-  </script>
- </body>
+    </script>
+  </body>
 </html>
