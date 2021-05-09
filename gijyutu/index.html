@@ -1,131 +1,117 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
-  <title>
-    技術部・史料保存室 - 東京大学史料編纂所 | Historiographical
-      Institute The University of Tokyo
-  </title>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
-  rel="stylesheet"
-/>
-<link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
-<script src="https://hi-ut.github.io/assets/js/vue.js"></script>
-<script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
-<script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      技術部・史料保存室 - 東京大学史料編纂所 | Historiographical Institute The
+      University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
 
-<script src="https://hi-ut.github.io/assets/js/env.js"></script>
-<script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
-<script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
- </head>
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
   <body>
     <div id="app">
-      <layout 
-        :lang="lang" 
-        :breadcrumbs="breadcrumbs"
-        :index="0"
-        :title="title">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="0" :id="id">
         <p>
           史料保存技術室は修復・影写・模写・写真の各分野に分かれ、歴史史料の複本作成、史料の保存・修理を行なっています。これら歴史史料に関わる事業は、史料保存の観点からみても大変重要な作業です。
-         </p>
-         <p>
+        </p>
+        <p>
           この事業は、原本の調査・分析を伴うため、その過程で得られた情報は、重要な歴史情報の研究データとなっています。修復・影写・模写は、長い時間をかけた手作業による史料の修理や複製を行ない、写真は、史料編纂所の現在の調査採訪活動を支えるなど、各々の専門分野で修練された技術を活かしています。
-         </p>
-         <p>
+        </p>
+        <p>
           前者は伝統的、後者は現代的な技術ですが、各々の技術職員は、自己の専門的な技術と経験を踏まえて研究を進め、新たな知見をもとに独自の技法を創意工夫することにも努めています。これらの各分野を擁する史料保存技術室は、日本で唯一の歴史学に属する総合的技術組織です。
-         </p>
-         <p>
+        </p>
+        <p>
           また、これまで史料保存技術室に在室した人物には、その功績が高く評価され、「黄綬褒章」「人事院総裁賞」「文化庁長官表彰」等の褒賞の授与や受賞の実績があります。
-         </p>
-         <h3 class="h04">
-          修復
-         </h3>
-         <p>
+        </p>
+        <h3 class="h04">修復</h3>
+        <p>
           虫害による損傷等により傷んだ史料を、表具という伝統技術を基に、時代の進展と共に要求される技術内容を察知して、他分野に亘る知識を取り入れるとともに、その価値・機能・形態等を正確に認識し、可逆性のある安全な方法を考えて、史料に影響の少ない安定したオリジナルに近い材料を選択し、劣化・損傷の進行を止める修理をする、史料保存の基礎に関わる仕事です。
-         </p>
-         <p>
+        </p>
+        <p>
           既に施された裏打ちや改装によって判読困難となった史料を研究・調査・撮影可能にする仕事もしています。修理の過程で、原形の変更や紙質に関わる諸問題を発見する事も多く、研究上、重要な意味をもっています。修理には、そのものにとって何が重要か、何をすべきか、すべきでないかという適切な判断と、単純作業ゆえの高度な技術が要求されます。
-         </p>
-         <p>
-          【TODO】
-         </p>
-         <p>
-          <b>
-           【スタッフ】髙島 晶彦・山口 悟史
-          </b>
-         </p>
-         <h3 class="h04">
-          影写
-         </h3>
-         <p>
+        </p>
+        <p>【TODO】</p>
+        <p>
+          <b> 【スタッフ】髙島 晶彦・山口 悟史 </b>
+        </p>
+        <h3 class="h04">影写</h3>
+        <p>
           影写とは、筆・墨・和紙を用い、筆跡をそっくりそのまま、ほぼ一筆で写し取り、筆勢、虫喰・墨の濃淡・にじみ・本紙の輪郭などまで忠実に手作業で再現する特殊技法のことをいいます。
-         </p>
-         <p>
+        </p>
+        <p>
           この影写の技法で古文書・古記録などの複本作成を行ない、1885
-              年以降蓄積された影写本は、現在では約7,100冊に達しています。最近では、筆跡の弁別が写真では困難である紙背文書（書状の再利用により発生）を対象とすることが多くなっています。
-         </p>
-         <p>
+          年以降蓄積された影写本は、現在では約7,100冊に達しています。最近では、筆跡の弁別が写真では困難である紙背文書（書状の再利用により発生）を対象とすることが多くなっています。
+        </p>
+        <p>
           このような緻密な作業を要することから量産は出来ませんが、この工程を経てできあがった影写本は、原本に次ぐ価値のあるものとして非常に重要なものとなります。
-         </p>
-         <p>
-          <b>
-           【スタッフ】神戸 雅史
-          </b>
-         </p>
-         <h3 class="h04">
-          模写
-         </h3>
-         <p>
+        </p>
+        <p>
+          <b> 【スタッフ】神戸 雅史 </b>
+        </p>
+        <h3 class="h04">模写</h3>
+        <p>
           肖像画や絵図などの絵画史料を、的確に写し取る仕事や、原本が描かれた当時の状態に復元する仕事を行なっています。作業には、材料の特定やその時代の技法の調査などが前提となり、これらの原本精査の情報は学問的にも重要なデータとなります。
-         </p>
-         <p>
+        </p>
+        <p>
           模写の仕事は特殊な工程が多いため、模写技術の専門的養成過程を経て、さらに経験と知識を蓄積することが必要です。明治以来現在まで、約900点以上の肖像画・絵図などの模写が蓄積されています。
-         </p>
-         <p>
-          <b>
-           【スタッフ】村岡 ゆかり
-          </b>
-         </p>
-         <h3 class="h04">
-          写真
-         </h3>
-         <p>
+        </p>
+        <p>
+          <b> 【スタッフ】村岡 ゆかり </b>
+        </p>
+        <h3 class="h04">写真</h3>
+        <p>
           今日主流となっているデジタル撮影により、従来の文字情報の記録のみを目的とした史料写真に加え、正確な色再現、高精細撮影や各種特殊撮影などが可能になりました。こうした最新のデジタル技術を用いて、材質や組成といったモノとしての情報も備えた総合的な史料写真の作成に取り組んでいます。
-         </p>
-         <p>
+        </p>
+        <p>
           また、初期の史料蒐集に用いられたガラス乾板や台紙付写真の保存も担っています。散逸や焼失により失われた史料が多く記録されているこれらそのものが、いまや原本に代わる貴重な古写真史料となっています。
-         </p>
-         <p>
+        </p>
+        <p>
           史料写真作成のみならず、様々な史料写真を次世代へ引き継ぐため、黎明期から現代に至る写真技術と保存方法を調査研究することも重要な使命となります。
-         </p>
-         <p>
-          <b>
-           【スタッフ】谷 昭佳・高山 さやか
-          </b>
-         </p>
-         <figure v-if="false">
-          <img alt="ほげほげ" src="./要覧　海外図版　商館長日記第1葉.jpg" style="height: 300px"/>
+        </p>
+        <p>
+          <b> 【スタッフ】谷 昭佳・高山 さやか </b>
+        </p>
+        <figure v-if="false">
+          <img
+            alt="ほげほげ"
+            src="./要覧　海外図版　商館長日記第1葉.jpg"
+            style="height: 300px"
+          />
           <figcaption>
-           長崎オランダ商館長日記1649 ～ 50 年第一葉
-           <br/>
-           （ハーグ市　オランダ国立中央文書館所蔵）
+            長崎オランダ商館長日記1649 ～ 50 年第一葉
+            <br />
+            （ハーグ市　オランダ国立中央文書館所蔵）
           </figcaption>
-         </figure>
+        </figure>
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "技術部・史料保存室"; //③タイトル編集
-      const SITE_LANG = "ja"; //④言語
       new Vue({
         el: "#app",
         data() {
           return {
-            lang: SITE_LANG,
-            title: SITE_TITLE,
-            breadcrumbs: [{ text: "ご案内", name: "about" }]
+            id: "gijyutu",
+            lang: "ja",
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
           };
         },
       });

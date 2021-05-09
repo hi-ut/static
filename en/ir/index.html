@@ -7,8 +7,8 @@
       name="viewport"
     />
     <title>
-      IR・PR - 東京大学史料編纂所 | Historiographical Institute The
-      University of Tokyo
+      IR・PR - 東京大学史料編纂所 | Historiographical Institute The University
+      of Tokyo
     </title>
     <meta content="ie=edge" data-n-head="ssr" http-equiv="x-ua-compatible" />
     <meta
@@ -95,7 +95,10 @@
       rel="stylesheet"
     />
     <link href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
     <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
     <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
     <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
@@ -106,26 +109,20 @@
   </head>
   <body>
     <div id="app">
-      <layout 
-        :lang="lang" 
-        :breadcrumbs="breadcrumbs"
-        :index="0"
-        :title="title">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="0" :id="id">
         <!-- 編集開始位置 -->
         <p>hogehoge</p>
         <!-- 編集終了位置 -->
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "IR・PR"; //③タイトル編集
-      const SITE_LANG = "en"; //④言語
       new Vue({
         el: "#app",
         data() {
           return {
-            lang: SITE_LANG,
-            title: SITE_TITLE,
-            breadcrumbs: [{ text: "ご案内", name: "about" }]
+            id: "ir",
+            lang: "en",
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
           };
         },
       });

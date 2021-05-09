@@ -1,8 +1,8 @@
 Vue.component("Layout", {
   props: {
-    title: { default: '', type: String },
     index: { default: -1, type: Number },
     lang: { default: '', type: String },
+    id: { default: '', type: String },
     breadcrumbs: { default: () => [], type: Array },
   },
   data() {
@@ -41,6 +41,9 @@ Vue.component("Layout", {
     window.addEventListener("resize", this.handleResize);
   },
   computed: {
+    title(){
+      return this.$t(this.id)
+    },
     menu() {
       if(this.menuList[this.index]){
         return this.menuList[this.index]
@@ -383,8 +386,7 @@ Vue.component("Layout", {
       <main id="main-contents" class="main-contents">
         <!-- InstanceBeginEditable name="main" -->
         <section>
-
-        <h1 class="h02">{{title}}</h1>
+          <h1 class="h02">{{title}}</h1>
           <slot />
         </section>
       </main>

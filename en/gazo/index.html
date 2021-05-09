@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
-  <title>
-    Center for the Study of Visual Sources - 東京大学史料編纂所 | Historiographical
-      Institute The University of Tokyo
-  </title>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
-  rel="stylesheet"
-/>
-<link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
-<script src="https://hi-ut.github.io/assets/js/vue.js"></script>
-<script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
-<script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      Center for the Study of Visual Sources - 東京大学史料編纂所 |
+      Historiographical Institute The University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
 
-<!-- 以下は、開発用に、一時的にローカルを参照 -->
+    <!-- 以下は、開発用に、一時的にローカルを参照 -->
 
-<script src="https://hi-ut.github.io/assets/js/env.js"></script>
-<script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
-<script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
-
- </head>
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
   <body>
     <div id="app">
-      <layout 
-        :lang="lang" 
-        :breadcrumbs="breadcrumbs"
-        :index="0"
-        :title="title">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="0" :id="id">
         <!-- ここより下を編集してください。 -->
         <p>
-          Traditionally, historical research, both in Japan and elsewhere, has been based primarily on written documents. Yet the existing Japanese historical materials include an immense array of pictorial sources as well, such as maps, portraits, picture scrolls, book illustrations, and more. The Center for the Study of Visual Sources was established in 1997 to apply new computer and scanner technologies to the study of historical pictures and maps. The staff at the center are working with researchers in the other five departments of the Institute and CDPS to create a systematic database of visual sources. Precision photography is used to examine paper quality and document aging, and the computers are used to identify handwriting, monograms, and seals. One project focuses on ancient and medieval estate maps with the Center producing compilations of these maps in the Nihon Shoen Ezu Shuei.
+          Traditionally, historical research, both in Japan and elsewhere, has
+          been based primarily on written documents. Yet the existing Japanese
+          historical materials include an immense array of pictorial sources as
+          well, such as maps, portraits, picture scrolls, book illustrations,
+          and more. The Center for the Study of Visual Sources was established
+          in 1997 to apply new computer and scanner technologies to the study of
+          historical pictures and maps. The staff at the center are working with
+          researchers in the other five departments of the Institute and CDPS to
+          create a systematic database of visual sources. Precision photography
+          is used to examine paper quality and document aging, and the computers
+          are used to identify handwriting, monograms, and seals. One project
+          focuses on ancient and medieval estate maps with the Center producing
+          compilations of these maps in the Nihon Shoen Ezu Shuei.
         </p>
         <!-- ここより上を編集してください。 -->
 
@@ -41,16 +54,13 @@
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "Center for the Study of Visual Sources"; //③タイトル編集
-      const SITE_LANG = "en"; //④言語
       new Vue({
         el: "#app",
         data() {
           return {
             id: "gazo",
-            lang: SITE_LANG,
-            title: SITE_TITLE,
-            breadcrumbs: [{ text: "ご案内", name: "about" }]
+            lang: "en",
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
           };
         },
       });

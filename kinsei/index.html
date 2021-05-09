@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
-  <title>
-    近世史料部門 - 東京大学史料編纂所 | Historiographical
-      Institute The University of Tokyo
-  </title>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
-  rel="stylesheet"
-/>
-<link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
-<script src="https://hi-ut.github.io/assets/js/vue.js"></script>
-<script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
-<script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      近世史料部門 - 東京大学史料編纂所 | Historiographical Institute The
+      University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
 
-<script src="https://hi-ut.github.io/assets/js/env.js"></script>
-<!-- <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script> -->
-<script src="../assets/js/layouts/default.js"></script>
-<!-- <script src="https://hi-ut.github.io/assets/js/components/members.js"></script> -->
-<script src="../assets/js/components/members.js"></script>
- </head>
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
   <body>
     <div id="app">
-      <layout 
-        :lang="lang" 
-        :breadcrumbs="breadcrumbs"
-        :index="0"
-        :title="title">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="0" :id="id">
         <!-- 以下を修正 -->
-        <p>　徳川家康の将軍宣下（慶長８年・1603）から廃藩置県（明治4年・1871）までの史料を6チームで研究しています。①江戸時代前期編年『大日本史料』第十二編、②幕府・大名・朝廷・公家類纂史料『大日本古文書 家わけ第十六 島津家文書』、『大日本近世史料 細川家史料』『同 市中取締類集』『同 広橋兼胤公武御用日記』、③ペリー来航後の対外関係編年文書『大日本古文書 幕末外国関係文書』を公刊中です。『大日本古記録 斎藤月岑日記』10巻、『大日本維新史料 類纂之部 井伊家史料』30巻は完結しました。
-    　  </p>
-        <p>　世界中からオンライン検索可能なデータベースとして、①「史料稿本」『東京市史稿』『天皇皇族実録』ほか基本史料・史料集10件を統合した「近世編年データベース」、②近世史料部門編纂の史料集既刊分を多様に活用できる「近世史編纂支援データベース」、③幕末維新史研究の基盤となる「維新史料綱要データベース」を構築・公開しています。</p>
-    　  <p>　また、地震火山関連史料の調査にも取り組んでいます。</p>
+        <p>
+          　徳川家康の将軍宣下（慶長８年・1603）から廃藩置県（明治4年・1871）までの史料を6チームで研究しています。①江戸時代前期編年『大日本史料』第十二編、②幕府・大名・朝廷・公家類纂史料『大日本古文書
+          家わけ第十六 島津家文書』、『大日本近世史料 細川家史料』『同
+          市中取締類集』『同
+          広橋兼胤公武御用日記』、③ペリー来航後の対外関係編年文書『大日本古文書
+          幕末外国関係文書』を公刊中です。『大日本古記録
+          斎藤月岑日記』10巻、『大日本維新史料 類纂之部
+          井伊家史料』30巻は完結しました。 　
+        </p>
+        <p>
+          　世界中からオンライン検索可能なデータベースとして、①「史料稿本」『東京市史稿』『天皇皇族実録』ほか基本史料・史料集10件を統合した「近世編年データベース」、②近世史料部門編纂の史料集既刊分を多様に活用できる「近世史編纂支援データベース」、③幕末維新史研究の基盤となる「維新史料綱要データベース」を構築・公開しています。
+        </p>
+        　
+        <p>　また、地震火山関連史料の調査にも取り組んでいます。</p>
 
-        <h2 class="h03">
-          刊行物（2014～2019年度）
-        </h2>
+        <h2 class="h03">刊行物（2014～2019年度）</h2>
 
         <ul>
           <li>『大日本史料』第十二編 61・62</li>
@@ -50,10 +58,17 @@
           <li>『大日本維新史料 類纂之部 井伊家史料』29・30(完)</li>
           <li>『大日本古文書 幕末外国関係文書』53</li>
         </ul>
-        
+
         <p>
-          <figure><img src="images/about_hi_kinsei.jpeg" alt="(元和2年・1616)   8月8日附  江戸幕府年寄連署奉書"/>
-            <figcaption>(元和2年・1616)   8月8日附  江戸幕府年寄連署奉書<br/>(『大日本古文書 島津家文書』6掲載、東京大学史料編纂所所蔵)</figcaption>
+          <figure>
+            <img
+              src="images/about_hi_kinsei.jpeg"
+              alt="(元和2年・1616)   8月8日附  江戸幕府年寄連署奉書"
+            />
+            <figcaption>
+              (元和2年・1616) 8月8日附 江戸幕府年寄連署奉書<br />(『大日本古文書
+              島津家文書』6掲載、東京大学史料編纂所所蔵)
+            </figcaption>
           </figure>
         </p>
         <!-- 以上を修正 -->
@@ -61,16 +76,13 @@
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "近世史料部門"; //③タイトル編集
-      const SITE_LANG = "ja"; //④言語
       new Vue({
         el: "#app",
         data() {
           return {
             id: "kinsei",
-            lang: SITE_LANG,
-            title: SITE_TITLE,
-            breadcrumbs: [{ text: "ご案内", name: "about" }]
+            lang: "ja",
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
           };
         },
       });

@@ -1,138 +1,77 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
-  <title>
-   古代史料部門 - 東京大学史料編纂所 | Historiographical Institute The
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      古代史料部門 - 東京大学史料編纂所 | Historiographical Institute The
       University of Tokyo
-  </title>
-  <meta content="ie=edge" data-n-head="ssr" http-equiv="x-ua-compatible"/>
-  <meta content="width=device-width, initial-scale=1" data-n-head="ssr" name="viewport"/>
-  <meta content="telephone=no, email=no, address=no" data-n-head="ssr" name="format-detection"/>
-  <meta content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。" data-hid="description" data-n-head="ssr" name="description"/>
-  <meta content="東京大学史料編纂所, Historiographical Institute, 東京大学, The University of Tokyo" data-hid="keywords" data-n-head="ssr" name="keywords"/>
-  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="og:site_name" data-n-head="ssr" property="og:site_name"/>
-  <meta content="website" data-hid="og:type" data-n-head="ssr" property="og:type"/>
-  <meta content="/" data-hid="og:url" data-n-head="ssr" property="og:url"/>
-  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="og:title" data-n-head="ssr" property="og:title"/>
-  <meta content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。" data-hid="og:description" data-n-head="ssr" property="og:description"/>
-  <meta content="/img/ogp/home.jpg" data-hid="og:image" data-n-head="ssr" property="og:image"/>
-  <meta content="summary_large_image" data-n-head="ssr" name="twitter:card"/>
-  <meta content="yes" data-n-head="ssr" name="apple-mobile-web-app-capable"/>
-  <meta content="black-translucent" data-n-head="ssr" name="apple-mobile-web-app-status-bar-style"/>
-  <meta charset="utf-8" data-hid="charset" data-n-head="ssr"/>
-  <meta content="yes" data-hid="mobile-web-app-capable" data-n-head="ssr" name="mobile-web-app-capable"/>
-  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="apple-mobile-web-app-title" data-n-head="ssr" name="apple-mobile-web-app-title"/>
-  <meta content="#ffffff" data-hid="theme-color" data-n-head="ssr" name="theme-color"/>
-  <link href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap" rel="stylesheet"/>
-  <link href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css" rel="stylesheet"/>
-  <link href="../assets/css/style.css" rel="stylesheet"/>
-  <script src="../assets/js/vue.js">
-  </script>
-  <script src="../assets/js/axios.min.js">
-  </script>
-  <script src="../assets/js/es6-promise.auto.min.js">
-  </script>
-  <script src="../assets/js/env.js">
-  </script>
-  <script src="../common/layout.js">
-  </script>
-  <script src="../common/components/layout/LayoutAbout.js">
-  </script>
-  <script src="../common/components/organization/members.js">
-  </script>
-  <script src="../common/components/organization/member.js">
-  </script>
- </head>
- <body>
-  <div id="app">
-   <layout :dict="dict" :lang="lang" :menu="menu">
-    <layout-about :breadcrumbs="breadcrumbs" :dict="dict" :index="0" :lang="lang" :menu="menu" :title="title" v-if="menu &amp;&amp; menu[0]">
-     <p>
-      古代から中世前期を４チームで分担し、『大日本史料』第一編から第五編までと『正倉院文書目録』の編纂を担当しています。
-     </p>
-     <p>
-      『大日本史料』は六国史のあとをうけて、仁和３年（887）の宇多天皇の践祚から第一編が始まり、第五編は鎌倉時代の末までを扱います。このうち第一編と第四編は一応の編纂を終えました。第一編については別冊補遺四冊を刊行し、データベース等による公開に切り換え、新たに「九世紀編年史料」（仮題）の編纂を進めています。第四編の別冊補遺は一冊刊行したところで中断しています。
-     </p>
-     <p>
-      『正倉院文書目録』は、わが国最古の古文書群である「正倉院文書」について、文字のみならず料紙の状態、接続の復元など様々な情報について調査してきた成果をまとめたものです。加えて、天皇家・公家の文庫・宝蔵研究の推進も担っています。
-     </p>
-     <h2 class="h03">
-      刊行物 （2009 ～ 2018年度）
-     </h2>
-     <ul class="mb-5">
-      <li>
-       『大日本史料　第二編』　　30・31
-      </li>
-      <li>
-       『大日本史料　第三編』　　29
-      </li>
-      <li>
-       『大日本史料　第五編』　　34・35・36
-      </li>
-      <li>
-       『正倉院文書目録』　　　 　6・7
-      </li>
-      <li>
-       『大日本古記録　陽明文庫本勘例』上
-      </li>
-     </ul>
-     <div class="text-center">
-      <img :height="300" class="mb-2" contain="" src="./images/gebumi.jpg"/>
-     </div>
-     <p class="text-center">
-      尾張国郡司百姓等解文（史料編纂所所蔵）
-     </p>
-     <members :dict="dict" :id="id" :items="items" :lang="lang">
-     </members>
-    </layout-about>
-   </layout>
-  </div>
-  <script>
-   new Vue({
-        el: '#app',
-        methods: {
-          $t(data) {
-            if (this.dict[data]) {
-              return this.dict[data]
-            } else {
-              return data
-            }
-          },
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="0" :id="id">
+        <!-- 以下を修正 -->
+        <p>
+          古代から中世前期を４チームで分担し、『大日本史料』第一編から第五編までと『正倉院文書目録』の編纂を担当しています。
+        </p>
+        <p>
+          『大日本史料』は六国史のあとをうけて、仁和３年（887）の宇多天皇の践祚から第一編が始まり、第五編は鎌倉時代の末までを扱います。このうち第一編と第四編は一応の編纂を終えました。第一編については別冊補遺四冊を刊行し、データベース等による公開に切り換え、新たに「九世紀編年史料」（仮題）の編纂を進めています。第四編の別冊補遺は一冊刊行したところで中断しています。
+        </p>
+        <p>
+          『正倉院文書目録』は、わが国最古の古文書群である「正倉院文書」について、文字のみならず料紙の状態、接続の復元など様々な情報について調査してきた成果をまとめたものです。加えて、天皇家・公家の文庫・宝蔵研究の推進も担っています。
+        </p>
+        <h2 class="h03">刊行物 （2009 ～ 2018年度）</h2>
+        <ul class="mb-5">
+          <li>『大日本史料　第二編』　　30・31</li>
+          <li>『大日本史料　第三編』　　29</li>
+          <li>『大日本史料　第五編』　　34・35・36</li>
+          <li>『正倉院文書目録』　　　 　6・7</li>
+          <li>『大日本古記録　陽明文庫本勘例』上</li>
+        </ul>
+        <p>
+          <figure>
+            <img
+              src="./images/gebumi.jpg"
+              alt="尾張国郡司百姓等解文（史料編纂所所蔵）"
+            />
+            <figcaption>尾張国郡司百姓等解文（史料編纂所所蔵）</figcaption>
+          </figure>
+        </p>
+        <!-- 以上を修正 -->
+        <members :id="id" :lang="lang"></members>
+      </layout>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            id: "kodai",
+            lang: "ja",
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
+          };
         },
-        data: {
-          lang: 'ja',
-          title: '',
-          baseUrl: '',
-          items: [],
-          id: '',
-          dict: {},
-          menu: [],
-          baseUrl: process.env.BASE_URL,
-          breadcrumbs: [{ text: "ご案内", name: "about" }],
-        },
-        async created() {
-          var self = this
-          await axios
-            .get(this.baseUrl + '/data/lang/ja.json')
-            .then(function (res) {
-              self.dict = res.data
-            })
-          await axios.get('./data/items.json').then(function (res) {
-            const data = res.data
-            self.items = data.items
-            self.id = data.id
-            self.title = self.$t(data.title)
-          })
-          await axios
-            .get(this.baseUrl + '/data/data.json')
-            .then(function (res) {
-              self.menu = res.data
-            })
-        },
-      })
-  </script>
- </body>
+      });
+    </script>
+  </body>
 </html>

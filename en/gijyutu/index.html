@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
-  <title>
-    CONSERVATION LABORATORY - 東京大学史料編纂所 | Historiographical
-      Institute The University of Tokyo
-  </title>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
-  rel="stylesheet"
-/>
-<link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
-<script src="https://hi-ut.github.io/assets/js/vue.js"></script>
-<script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
-<script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      CONSERVATION LABORATORY - 東京大学史料編纂所 | Historiographical Institute
+      The University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
 
-<!-- 以下は、開発用に、一時的にローカルを参照 -->
+    <!-- 以下は、開発用に、一時的にローカルを参照 -->
 
-<script src="https://hi-ut.github.io/assets/js/env.js"></script>
-<script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
-<script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
-
- </head>
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
   <body>
     <div id="app">
-      <layout 
-        :lang="lang" 
-        :breadcrumbs="breadcrumbs"
-        :index="0"
-        :title="title">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="0" :id="id">
         <!-- ここより下を編集してください。 -->
         <p>
           Engineers in the Conservation Laboratory work to preserve and
-          reproduce many kinds of historical materials. They are highly
-          skilled in traditional procedures and are also employing the latest
-          multimedia techniques. Their work is divided into four categories:
+          reproduce many kinds of historical materials. They are highly skilled
+          in traditional procedures and are also employing the latest multimedia
+          techniques. Their work is divided into four categories:
         </p>
 
         <h2 class="h03">Calligraphic Reproduction</h2>
         <p>
           Written documents are traced with brush, ink, and traditional paper.
-          Skilled calligraphers are able to judge types of ink, light
-          exposure, and even the brush angle used in creating the original
-          document. Copies must be identical with the originals in every
-          respect, including evidence of wear and tear.
+          Skilled calligraphers are able to judge types of ink, light exposure,
+          and even the brush angle used in creating the original document.
+          Copies must be identical with the originals in every respect,
+          including evidence of wear and tear.
         </p>
         <p class="text-right"><b>Staff</b> MIYAZAKI Hajime</p>
 
@@ -53,8 +54,8 @@
         <p>
           Pictorial materials are copied with traditional painting techniques.
           Reproduction requires experienced painters to be able not only to
-          capture the obvious brushstroke but to recreate the spirit and
-          feeling evoked by the picture or map.
+          capture the obvious brushstroke but to recreate the spirit and feeling
+          evoked by the picture or map.
         </p>
         <p class="text-right"><b>Staff</b> MURAOKA Yukari</p>
 
@@ -72,27 +73,24 @@
 
         <h2 class="h03">Photography</h2>
         <p>
-          By the latest digital technology, we create photographic
-          reproductions of historical materials conveying not only texts but
-          also precise color and paper compositions. We also use this
-          technology to preserve old photos including glass plates. Research
-          on photographic technology from the earliest days up to now is also
-          our mission.
+          By the latest digital technology, we create photographic reproductions
+          of historical materials conveying not only texts but also precise
+          color and paper compositions. We also use this technology to preserve
+          old photos including glass plates. Research on photographic technology
+          from the earliest days up to now is also our mission.
         </p>
         <p class="text-right"><b>Staff</b> TANI Akiyoshi, TAKAYAMA Sayaka</p>
         <!-- ここより上を編集してください。 -->
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "International Center for the Digitization of Premodern Japanese Sources (CDPS)"; //③タイトル編集
-      const SITE_LANG = "en"; //④言語
       new Vue({
         el: "#app",
         data() {
           return {
-            lang: SITE_LANG,
-            title: SITE_TITLE,
-            breadcrumbs: [{ text: "ご案内", name: "about" }]
+            id: "gijyutu",
+            lang: "en",
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
           };
         },
       });

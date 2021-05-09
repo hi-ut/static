@@ -1,75 +1,67 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
-  <title>
-    中世史料部門 - 東京大学史料編纂所 | Historiographical
-      Institute The University of Tokyo
-  </title>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
-  rel="stylesheet"
-/>
-<link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
-<script src="https://hi-ut.github.io/assets/js/vue.js"></script>
-<script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
-<script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      中世史料部門 - 東京大学史料編纂所 | Historiographical Institute The
+      University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
 
-<script src="https://hi-ut.github.io/assets/js/env.js"></script>
-<script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
-<script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
- </head>
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
   <body>
     <div id="app">
-      <layout 
-        :lang="lang" 
-        :breadcrumbs="breadcrumbs"
-        :index="0"
-        :title="title">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="0" :id="id">
         <p>
           建武の新政（正慶２年・元弘３年・1333）から江戸幕府成立（慶長８年・1603）までを６チームで分担し、『大日本史
-                  料』第六編から第十一編までを編纂しています。第六・七編の担当は南北朝・室町期、文化史的には足利義満の造った金閣に代表される北山時代です。第八・九編は応仁の乱に始まる戦国期、銀閣に代表される東山時代となります。第十・十一編は新しい秩序を模索する全国統一へ向けた時代、武田信玄・織田信長・豊臣
-                  秀吉・徳川家康らの戦国武将が活躍する安土・桃山時代です。
-         </p>
-         <p>
+          料』第六編から第十一編までを編纂しています。第六・七編の担当は南北朝・室町期、文化史的には足利義満の造った金閣に代表される北山時代です。第八・九編は応仁の乱に始まる戦国期、銀閣に代表される東山時代となります。第十・十一編は新しい秩序を模索する全国統一へ向けた時代、武田信玄・織田信長・豊臣
+          秀吉・徳川家康らの戦国武将が活躍する安土・桃山時代です。
+        </p>
+        <p>
           この時期の史料には、文書・日記・系図・物語や詩など多様なものがあります。中世史料部門では、これらの史料を全国各地で
-                  調査し、影写本・写真などの形で集積するとともに、それらを吟味・解読し、人名や地名の考証を行い、多様な史料を組み合わせて、事件の概要ができるだけ一次史料によって分かるように編纂しています。
-         </p>
-         <p>
+          調査し、影写本・写真などの形で集積するとともに、それらを吟味・解読し、人名や地名の考証を行い、多様な史料を組み合わせて、事件の概要ができるだけ一次史料によって分かるように編纂しています。
+        </p>
+        <p>
           刊行した『大日本史料』を利用しやすくするため、最近では人名、引用した史料の索引などをデータベース化したり、印刷データを利用して全文データベースを作ったりしています。
-         </p>
-         <h2 class="h03">
-          刊行物 （2008 ～ 2019年度）
-         </h2>
-         <ul>
-          <li>
-           『大日本史料』第六編　　48・49・50
-          </li>
-          <li>
-           『大日本史料』第七編　　32・33・34
-          </li>
-          <li>
-           『大日本史料』第八編　　41・42・43
-          </li>
-          <li>
-           『大日本史料』第九編　　25・26・27・28
-          </li>
-          <li>
-           『大日本史料』第十編　　26・27・28・29
-          </li>
-          <li>
-           『大日本史料』第十一編　26・27・28
-          </li>
-          <li>
-           『大日本古記録　碧山日録』　上・下
-          </li>
-         </ul>
+        </p>
+        <h2 class="h03">刊行物 （2008 ～ 2019年度）</h2>
+        <ul>
+          <li>『大日本史料』第六編　　48・49・50</li>
+          <li>『大日本史料』第七編　　32・33・34</li>
+          <li>『大日本史料』第八編　　41・42・43</li>
+          <li>『大日本史料』第九編　　25・26・27・28</li>
+          <li>『大日本史料』第十編　　26・27・28・29</li>
+          <li>『大日本史料』第十一編　26・27・28</li>
+          <li>『大日本古記録　碧山日録』　上・下</li>
+        </ul>
 
-         <p>
-          <figure><img src="images/about_hi_tokudaiji.jpg" alt="徳大寺公清公記（『大日本史料　第六編』12 掲載）"/>
-            <figcaption>徳大寺公清公記（『大日本史料　第六編』12 掲載）</figcaption>
+        <p>
+          <figure>
+            <img
+              src="images/about_hi_tokudaiji.jpg"
+              alt="徳大寺公清公記（『大日本史料　第六編』12 掲載）"
+            />
+            <figcaption>
+              徳大寺公清公記（『大日本史料　第六編』12 掲載）
+            </figcaption>
           </figure>
         </p>
 
@@ -77,16 +69,13 @@
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "中世史料部門"; //③タイトル編集
-      const SITE_LANG = "ja"; //④言語
       new Vue({
         el: "#app",
         data() {
           return {
             id: "chusei",
-            lang: SITE_LANG,
-            title: SITE_TITLE,
-            breadcrumbs: [{ text: "ご案内", name: "about" }]
+            lang: "ja",
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
           };
         },
       });

@@ -109,7 +109,7 @@
   </head>
   <body>
     <div id="app">
-      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :title="title">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :id="id">
         <!-- ②本文開始位置 -->
         <h2 class="h03">
           Historiographical Institute Library, The University of Tokyo
@@ -147,14 +147,12 @@
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "Library Home"; //③タイトル編集
-      const SITE_LANG = "en"; //④言語
       new Vue({
         el: "#app",
         data() {
           return {
-            lang: SITE_LANG,
-            title: SITE_TITLE,
+            id: "Library Home",
+            lang: "en",
             breadcrumbs: [{ text: "Library", name: "tosho" }],
           };
         },

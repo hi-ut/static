@@ -1,148 +1,104 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
-  <title>
-   特殊史料部門 - 東京大学史料編纂所 | Historiographical Institute The
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      特殊史料部門 - 東京大学史料編纂所 | Historiographical Institute The
       University of Tokyo
-  </title>
-  <meta content="ie=edge" data-n-head="ssr" http-equiv="x-ua-compatible"/>
-  <meta content="width=device-width, initial-scale=1" data-n-head="ssr" name="viewport"/>
-  <meta content="telephone=no, email=no, address=no" data-n-head="ssr" name="format-detection"/>
-  <meta content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。" data-hid="description" data-n-head="ssr" name="description"/>
-  <meta content="東京大学史料編纂所, Historiographical Institute, 東京大学, The University of Tokyo" data-hid="keywords" data-n-head="ssr" name="keywords"/>
-  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="og:site_name" data-n-head="ssr" property="og:site_name"/>
-  <meta content="website" data-hid="og:type" data-n-head="ssr" property="og:type"/>
-  <meta content="/" data-hid="og:url" data-n-head="ssr" property="og:url"/>
-  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="og:title" data-n-head="ssr" property="og:title"/>
-  <meta content="東京大学史料編纂所は、東京大学の附置研究所で、国内外の史料の調査、収集・複写、分析、編纂、公開を行い、歴史情報学研究を推進することを目的とする研究所である。1793年、徳川幕府の援助を受けた国学者塙保己一が開設した和学講談所を源流とする。 近年では複写に最新の写真技術やデジタル画像技術が駆使されている。" data-hid="og:description" data-n-head="ssr" property="og:description"/>
-  <meta content="/img/ogp/home.jpg" data-hid="og:image" data-n-head="ssr" property="og:image"/>
-  <meta content="summary_large_image" data-n-head="ssr" name="twitter:card"/>
-  <meta content="yes" data-n-head="ssr" name="apple-mobile-web-app-capable"/>
-  <meta content="black-translucent" data-n-head="ssr" name="apple-mobile-web-app-status-bar-style"/>
-  <meta charset="utf-8" data-hid="charset" data-n-head="ssr"/>
-  <meta content="yes" data-hid="mobile-web-app-capable" data-n-head="ssr" name="mobile-web-app-capable"/>
-  <meta content="東京大学史料編纂所 | Historiographical Institute The University of Tokyo" data-hid="apple-mobile-web-app-title" data-n-head="ssr" name="apple-mobile-web-app-title"/>
-  <meta content="#ffffff" data-hid="theme-color" data-n-head="ssr" name="theme-color"/>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://www.ssl-system.jp/hi-u-tokyo/assets/css/style.css" rel="stylesheet"/>
-  <link href="../assets/css/style.css" rel="stylesheet"/>
-  <script src="../assets/js/vue.js">
-  </script>
-  <script src="../assets/js/axios.min.js">
-  </script>
-  <script src="../assets/js/es6-promise.auto.min.js">
-  </script>
-  <script src="../assets/js/env.js">
-  </script>
-  <script src="../common/layout.js">
-  </script>
-  <script src="../common/components/layout/LayoutAbout.js">
-  </script>
-  <script src="../common/components/organization/members.js">
-  </script>
-  <script src="../common/components/organization/member.js">
-  </script>
- </head>
- <body>
-  <div id="app">
-   <layout :dict="dict" :lang="lang" :menu="menu">
-    <layout-about :breadcrumbs="breadcrumbs" :dict="dict" :index="0" :lang="lang" :menu="menu" :title="title" v-if="menu &amp;&amp; menu[0]">
-     <p>
-      歴史史料の基礎研究である史料学、歴史地理、日本に関する外国文及び外国に所在する日本関係史料を担当します。史料学分野では文書や記録を読む上で不可欠な花押の網羅的蒐集と研究および『花押かがみ』の編纂・出版、海外史料分野では『日本関係海外史料』の原文及び訳文の編纂作業を行なっています。『大日本史料』に収める欧文史料の編纂も本部門が担当しています。
-     </p>
-     <p>
-      花押は、文書の真偽判定の手がかり、発給者特定の根拠、年代推定の決定的要素です。画像の比較だけでなく、史料学や政治史的な成果を踏まえた人名比定が必要となり、現在のコンピューター技術をもってしてもその処理には難しい問題が多くあります。2001年度から2009年度にかけて『花押かがみ』南北朝時代一～四を刊行し、南北朝時代編が完結しています。
-            海外史料分野では、日本学士院の委嘱を受けて行なった日本関係海外史料複本の蒐集事業をうけて、本所所蔵マイクロフィルムの目録化を進め、ほぼ完了しました。近年では新たなデジタル・データの受け入れ等も進めています。中世後期から近世初頭の日本を東アジア・東南アジアの文脈に位置づけつつ、ヨーロッパ諸言語を中心に外国語史料の研究を行なっています。
-     </p>
-     <p>
-      禅籍史料研究プロジェクトでは、難解な漢文で書かれているけれども、中世の日本史像の解明
-            には欠かせない五山十刹を中心とした禅僧の日記や著作の研究を行っています。
-     </p>
-     <h2 class="h03">
-      刊行物 （2009 ～ 2018 年度）
-     </h2>
-     <ul class="mb-5">
-      <li>
-       <a href="https://www.hi.u-tokyo.ac.jp/search.html?search=intitle:%E8%8A%B1%E6%8A%BC%E3%81%8B%E3%81%8C%E3%81%BF%20pub">
-        『花押かがみ』
-       </a>
-       南北朝時代四
-      </li>
-      <li>
-       <a href="https://www.hi.u-tokyo.ac.jp/search.html?search=intitle:%E3%82%AA%E3%83%A9%E3%83%B3%E3%83%80%E5%95%86%E9%A4%A8%E9%95%B7%E6%97%A5%E8%A8%98%20pub">
-        『日本関係海外史料　オランダ商館長日記』
-       </a>
-       原文編 12・13　訳文編
-              11・12
-      </li>
-      <li>
-       <a href="https://www.hi.u-tokyo.ac.jp/search.html?search=intitle:%E3%82%A4%E3%82%A8%E3%82%BA%E3%82%B9%E4%BC%9A%E6%97%A5%E6%9C%AC%E6%9B%B8%E7%BF%B0%E9%9B%86%20pub">
-        『日本関係海外史料　イエズス会日本書翰集』
-       </a>
-       原文編 3　訳文編
-              3　原訳文編 4
-      </li>
-     </ul>
-     <figure>
-      <img alt="ほげほげ" src="./要覧　海外図版　商館長日記第1葉.jpg" style="height: 300px"/>
-      <figcaption>
-       長崎オランダ商館長日記1649 ～ 50 年第一葉
-       <br/>
-       （ハーグ市　オランダ国立中央文書館所蔵）
-      </figcaption>
-     </figure>
-     <members :dict="dict" :id="id" :items="items" :lang="lang" class="mt-10">
-     </members>
-    </layout-about>
-   </layout>
-  </div>
-  <script>
-   new Vue({
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="0" :id="id">
+        <!-- 以下を修正 -->
+        <p>
+          歴史史料の基礎研究である史料学、歴史地理、日本に関する外国文及び外国に所在する日本関係史料を担当します。史料学分野では文書や記録を読む上で不可欠な花押の網羅的蒐集と研究および『花押かがみ』の編纂・出版、海外史料分野では『日本関係海外史料』の原文及び訳文の編纂作業を行なっています。『大日本史料』に収める欧文史料の編纂も本部門が担当しています。
+        </p>
+        <p>
+          花押は、文書の真偽判定の手がかり、発給者特定の根拠、年代推定の決定的要素です。画像の比較だけでなく、史料学や政治史的な成果を踏まえた人名比定が必要となり、現在のコンピューター技術をもってしてもその処理には難しい問題が多くあります。2001年度から2009年度にかけて『花押かがみ』南北朝時代一～四を刊行し、南北朝時代編が完結しています。
+          海外史料分野では、日本学士院の委嘱を受けて行なった日本関係海外史料複本の蒐集事業をうけて、本所所蔵マイクロフィルムの目録化を進め、ほぼ完了しました。近年では新たなデジタル・データの受け入れ等も進めています。中世後期から近世初頭の日本を東アジア・東南アジアの文脈に位置づけつつ、ヨーロッパ諸言語を中心に外国語史料の研究を行なっています。
+        </p>
+        <p>
+          禅籍史料研究プロジェクトでは、難解な漢文で書かれているけれども、中世の日本史像の解明
+          には欠かせない五山十刹を中心とした禅僧の日記や著作の研究を行っています。
+        </p>
+        <h2 class="h03">刊行物 （2009 ～ 2018 年度）</h2>
+        <ul class="mb-5">
+          <li>
+            <a
+              href="https://www.hi.u-tokyo.ac.jp/search.html?search=intitle:%E8%8A%B1%E6%8A%BC%E3%81%8B%E3%81%8C%E3%81%BF%20pub"
+            >
+              『花押かがみ』
+            </a>
+            南北朝時代四
+          </li>
+          <li>
+            <a
+              href="https://www.hi.u-tokyo.ac.jp/search.html?search=intitle:%E3%82%AA%E3%83%A9%E3%83%B3%E3%83%80%E5%95%86%E9%A4%A8%E9%95%B7%E6%97%A5%E8%A8%98%20pub"
+            >
+              『日本関係海外史料　オランダ商館長日記』
+            </a>
+            原文編 12・13　訳文編 11・12
+          </li>
+          <li>
+            <a
+              href="https://www.hi.u-tokyo.ac.jp/search.html?search=intitle:%E3%82%A4%E3%82%A8%E3%82%BA%E3%82%B9%E4%BC%9A%E6%97%A5%E6%9C%AC%E6%9B%B8%E7%BF%B0%E9%9B%86%20pub"
+            >
+              『日本関係海外史料　イエズス会日本書翰集』
+            </a>
+            原文編 3　訳文編 3　原訳文編 4
+          </li>
+        </ul>
+
+        <p class="text-center">
+          <figure>
+            <img
+              src="./images/about_hi_tokushu.jpg"
+              alt="長崎オランダ商館長日記1649 ～ 50 年第一葉"
+              style="height: 300px"
+            />
+            <figcaption>
+              長崎オランダ商館長日記1649 ～ 50 年第一葉
+              <br />
+              （ハーグ市　オランダ国立中央文書館所蔵）
+            </figcaption>
+          </figure>
+        </p>
+        <!-- 以上を修正 -->
+        <members :id="id" :lang="lang"></members>
+      </layout>
+    </div>
+    <script>
+      new Vue({
         el: "#app",
-        methods: {
-          $t(data) {
-            if (this.dict[data]) {
-              return this.dict[data];
-            } else {
-              return data;
-            }
-          },
-        },
         data() {
           return {
+            id: "tokushu",
             lang: "ja",
-            title: "",
-            items: [],
-            id: "",
-            dict: {},
-            menu: [],
-            baseUrl: process.env.BASE_URL,
             breadcrumbs: [{ text: "ご案内", name: "about" }],
           };
         },
-        async created() {
-          var self = this;
-          await axios
-            .get(this.baseUrl + "/data/lang/ja.json")
-            .then(function (res) {
-              self.dict = res.data;
-            });
-          await axios.get("./data/items.json").then(function (res) {
-            const data = res.data;
-            self.items = data.items;
-            self.id = data.id;
-            self.title = self.$t(data.title);
-          });
-          await axios
-            .get(this.baseUrl + "/data/data.json")
-            .then(function (res) {
-              self.menu = res.data;
-            });
-        },
       });
-  </script>
- </body>
+    </script>
+  </body>
 </html>

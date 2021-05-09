@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" name="viewport"/>
-  <title>
-    International Center for the Digitization of Premodern Japanese Sources
-    (CDPS) - 東京大学史料編纂所 | Historiographical
-      Institute The University of Tokyo
-  </title>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
-  rel="stylesheet"
-/>
-<link href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://hi-ut.github.io/assets/css/style.css" rel="stylesheet" />
-<script src="https://hi-ut.github.io/assets/js/vue.js"></script>
-<script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
-<script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      International Center for the Digitization of Premodern Japanese Sources
+      (CDPS) - 東京大学史料編纂所 | Historiographical Institute The University
+      of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
 
-<!-- 以下は、開発用に、一時的にローカルを参照 -->
+    <!-- 以下は、開発用に、一時的にローカルを参照 -->
 
-<script src="https://hi-ut.github.io/assets/js/env.js"></script>
-<script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
-<script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
-
- </head>
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
   <body>
     <div id="app">
-      <layout 
-        :lang="lang" 
-        :breadcrumbs="breadcrumbs"
-        :index="0"
-        :title="title">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="0" :id="id">
         <!-- ここより下を編集してください。 -->
         <p>
           In 1984, the Historiographical Institute innovated historical
-          information database system, and in 1997 made it available online.
-          The system has become an indispensable source of scholarly
-          information for those studying on the history of Japan.
+          information database system, and in 1997 made it available online. The
+          system has become an indispensable source of scholarly information for
+          those studying on the history of Japan.
         </p>
         <p>
           The International Center for the Digitization of Pre-modern Japanese
@@ -61,24 +62,24 @@
           standardization and multilingual support for both data and systems.
         </p>
         <p>
-          b) The digital photographing and the digitization of existing
-          historic photographs (working from microfilm, and in some cases from
-          glass plates)
+          b) The digital photographing and the digitization of existing historic
+          photographs (working from microfilm, and in some cases from glass
+          plates)
         </p>
         <p>
           c) Transformation of historical document collections into knowledge
-          that allows the fruits of historical research to be shared
-          throughout academia and society.
+          that allows the fruits of historical research to be shared throughout
+          academia and society.
         </p>
         <p>
           The head of the Center or the Institute’s Director supervises the
           staff. The CDPS committee is chaired by the Institute’s Chief
-          Information Officer. The Information Support Group for the
-          Institute’s staff is affiliated with the Center.
+          Information Officer. The Information Support Group for the Institute’s
+          staff is affiliated with the Center.
         </p>
 
         <p>
-          <img src="images/about_hi_cdps_01.jpeg"/>
+          <img src="images/about_hi_cdps_01.jpeg" />
         </p>
         <!-- ここより上を編集してください。 -->
 
@@ -86,16 +87,13 @@
       </layout>
     </div>
     <script>
-      const SITE_TITLE = "International Center for the Digitization of Premodern Japanese Sources (CDPS)"; //③タイトル編集
-      const SITE_LANG = "en"; //④言語
       new Vue({
         el: "#app",
         data() {
           return {
             id: "cdps",
-            lang: SITE_LANG,
-            title: SITE_TITLE,
-            breadcrumbs: [{ text: "ご案内", name: "about" }]
+            lang: "en",
+            breadcrumbs: [{ text: "ご案内", name: "about" }],
           };
         },
       });
