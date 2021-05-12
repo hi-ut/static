@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      図書室のサービス案内 - 東京大学史料編纂所 | Historiographical Institute
+      The University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :id="id">
+        <!-- ②本文開始位置 -->
+        <h2 class="h03">図書室概要</h2>
+        <p class="mtx">
+          東京大学史料編纂所図書室では、本所が収集・作成してきた史料と所蔵する図書・雑誌をご覧いただけます。
+          <br />
+          本学所属者のほか、学外の方も図書室の利用が可能です。（所外への貸出は行っておりません。
+          ）
+          <br />
+        </p>
+        <p class="mtx">
+          閲覧室には、閲覧席と貴重書用の閲覧スペースがあります。また、所蔵史料検索やデジタル化された史料を閲覧するためのPC端末、マイクロフィルムを閲覧するための機器、図書や雑誌の複写を行うためのコピー機が設置されています。
+          <br />
+        </p>
+        <p class="mtx">
+          閲覧室の書架には、参考図書および影写本の複製本（一部を除く）が配架されています。
+          <br />
+          その他の史料や図書、雑誌は閉架書庫の中にあり、職員が出納を行っています。
+          <br />
+        </p>
+        <p class="mtx"></p>
+        <ul class="listIcon_arr">
+          <li class="mtx">
+            □ 所蔵史料については、
+            <a
+              href="https://www.hi.u-tokyo.ac.jp/collection/collection01-j"
+              target="_blank"
+            >
+              こちらのページ
+            </a>
+            をご覧ください。
+          </li>
+          <li class="mtx">
+            □ 図書室の利用方法や開室日程、閲覧時間は
+            <a href="../etsuran" target="_blank">
+              「図書室利用案内（閲覧手続き）」
+            </a>
+            をご覧ください。
+          </li>
+          <li class="mtx">
+            □
+            Wi-Fi等のネットワーク環境の提供はございません。また、閲覧室設置のPC端末では、本所のwebサイトと東京大学OPAC以外のwebサイトの接続はできません。学内向けのUTokyo
+            Wi-Fi、ECCS端末もございませんので、あらかじめご了承ください。
+          </li>
+        </ul>
+        <h2 class="h03">所蔵史料・図書について</h2>
+        <p class="mtx">
+          東京大学史料編纂所では史料と図書、雑誌を収蔵しています。
+          <br />
+          それぞれ、
+          <a href="../kensaku" target="_blank"> 検索方法 </a>
+          や
+          <a href="../shiryoriyo" target="_blank"> 複製に際しての手続き </a>
+          が異なりますので、ご注意ください。
+        </p>
+        <h3 class="h04">史料</h3>
+        <p class="mtx">
+          前近代の日本史史料の原本と複製史料（写本、写真等）を所蔵しています。国宝や重要文化財に指定されている史料もあります。
+          <br />
+          所蔵史料の概要は、
+          <a
+            href="https://www.hi.u-tokyo.ac.jp/collection/collection01"
+            target="_blank"
+          >
+            こちら
+          </a>
+          をご覧ください。
+        </p>
+        <h3 class="h04">図書、雑誌</h3>
+        <p class="mtx">
+          印刷刊行された本および逐次刊行物を所蔵しています。一部、貴重書（特殊蒐書）に指定されている図書もあります。
+        </p>
+        <h2 class="h03">サービスのご案内</h2>
+        <ul class="listIcon_arr">
+          <li class="mtx">
+            史料編纂所が所蔵する史料や図書、雑誌を探している
+            <br />
+            →
+            <a href="../kensaku" target="_blank"> 「所蔵史料の検索」 </a>
+            をご覧ください
+          </li>
+          <br />
+          <li class="mtx">
+            史料や図書、雑誌を閲覧したい
+            <br />
+            →
+            <a href="../etsuran" target="_blank">
+              「図書室利用案内（閲覧手続き）」
+            </a>
+            をご覧ください
+          </li>
+          <br />
+          <li class="mtx">
+            貴重書を閲覧したい
+            <br />
+            →
+            <a
+              href="https://www.hi.u-tokyo.ac.jp/dev/tosho/etsuran/kichosho/"
+              target="_blank"
+            >
+              「貴重書の閲覧について」
+            </a>
+            をご覧ください
+          </li>
+          <br />
+          <li class="mtx">
+            史料や図書、雑誌のコピーがほしい
+            <br />
+            →
+            <a href="../shiryoriyo#fukusei" target="_blank">
+              「史料等利用案内（複製・掲載・放映等）」の「複製」
+            </a>
+            をご覧ください
+          </li>
+          <br />
+          <li class="mtx">
+            史料の画像を本や雑誌に載せたい
+            <br />
+            →
+            <a href="../shiryoriyo#keisai" target="_blank">
+              「史料等利用案内（複製・掲載・放映等）」の「掲載・放映等」
+            </a>
+            をご覧ください
+          </li>
+          <br />
+          <li class="mtx">
+            史料の画像を映像に使いたい
+            <br />
+            →
+            <a href="../shiryoriyo#keisai" target="_blank">
+              「史料等利用案内（複製・掲載・放映等）」の「掲載・放映等」
+            </a>
+            をご覧ください
+          </li>
+          <br />
+          <li class="mtx">
+            史料の本文を活字にして本や雑誌に載せたい
+            <br />
+            →
+            <a href="../shiryoriyo#honkoku" target="_blank">
+              「史料等利用案内（複製・掲載・放映等）」の「翻刻」
+            </a>
+            をご覧ください
+          </li>
+          <br />
+          <li class="mtx">
+            史料の原物を博物館等の展示に使いたい
+            <br />
+            →
+            <a href="../shiryoriyo#shucchin" target="_blank">
+              「史料等利用案内（複製・掲載・放映等）」の「出陳」
+            </a>
+            をご覧ください
+          </li>
+          <br />
+          <li class="mtx">
+            史料の画像をパネルや動画に用いて展示に使いたい
+            <br />
+            →
+            <a href="../shiryoriyo#keisai" target="_blank">
+              「史料等利用案内（複製・掲載・放映等）」の「掲載・放映等」
+            </a>
+            をご覧ください
+          </li>
+          <br />
+          <li class="mtx">
+            webページを読んだが、わからないことがある
+            <br />
+            →
+            <a href="../toiawase" target="_blank"> 「お問い合わせ・連絡先」 </a>
+            をご覧ください
+          </li>
+          <br />
+        </ul>
+        <!-- 本文終了位置 -->
+      </layout>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            id: "図書室のサービス案内", //③タイトル編集
+            lang: "ja",
+            breadcrumbs: [{ text: "史料の利用", name: "library" }],
+          };
+        },
+      });
+    </script>
+  </body>
+</html>

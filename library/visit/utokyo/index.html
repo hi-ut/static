@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      【学内の方】閲覧手続きについて - 東京大学史料編纂所 | Historiographical
+      Institute The University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :id="id">
+        <!-- ②本文開始位置 -->
+        <h2 class="h03" id="info">貴重書の閲覧について</h2>
+        <div id="txtBody">
+          <h4>このページは、本学の学生・教職員・名誉教授の方が対象です。</h4>
+          <h4>
+            学外の方は、
+            <a href="../gakugai/index.html">
+              【学外の方】閲覧手続きについて
+            </a>
+            をご参照ください。
+          </h4>
+          <h4>閲覧には予約が必要です。</h4>
+          <br />
+          <br />
+          <div class="frame01">
+            <h3>
+              【重要なお知らせ】史料編纂所図書室の閲覧利用停止について（2021.1.8）
+            </h3>
+            <p class="mtx">
+              新型コロナウイルス感染症対策のため、当面の間、所外者の方の閲覧利用は以下の通りとなります。誠に申し訳ございませんが何卒ご了承くださいますようお願いいたします。
+              <br />
+              <br />
+              <strong> ◆学外の方： </strong>
+              当面の間、閲覧利用を停止します。誠に申し訳ございませんが何卒ご了承ください。閲覧予約受付の再開は本サイトに掲載いたします。
+              <br />
+              <br />
+              <strong> ◆学内の方： </strong>
+              この期間に閲覧が必要な史料・図書に限り、完全予約制で閲覧可能です。時間帯などに制限があります。詳細は
+              <a href="../gakunai/index.html">
+                【学内の方】閲覧手続きについて
+              </a>
+              のページをご参照ください。
+              <br />
+              <br />
+              ・なお、複製・掲載・放映等、史料の利用に関するお問い合わせはWebのお問い合わせフォームで受け付けております。詳細は
+              <a href="../../shiryoriyo/index.html">
+                史料等利用案内（複製・掲載・放映等）
+              </a>
+              のページをご参照ください。
+              <br />
+              ・ご自宅のパソコン等で閲覧できる史料もあります。詳細は
+              <a href="../../kensaku/index.html"> 所蔵史料の検索 </a>
+              のページをご参照ください。
+              <br />
+            </p>
+          </div>
+          <h2 class="h03">手続きの前に</h2>
+          <h3 class="h04">
+            <span class="fc1">
+              あらかじめ本所所蔵であることをお確かめの上、ご来所ください。
+            </span>
+          </h3>
+          <br />
+          <p class="mtx">
+            ※閲覧予約フォームに、閲覧希望史料・図書の「請求記号」と「史料・図書名」を入力する欄があります。正確にご記入ください。
+            <br />
+            ・刊本（印刷されて刊行された図書）、雑誌→
+            <a
+              href="https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_search/"
+              target="_blank"
+            >
+              東京大学OPAC
+            </a>
+            で検索
+            <br />
+            ・刊本以外の史料→
+            <a href="https://wwwap.hi.u-tokyo.ac.jp/ships/" target="_blank">
+              本所所蔵史料目録データベース
+            </a>
+            で検索
+            <br />
+            ＊
+            <a
+              href="https://www.hi.u-tokyo.ac.jp/dev/tosho/kichosho/"
+              target="_blank"
+            >
+              貴重書の閲覧について
+            </a>
+            の項もご参照ください。
+            <br />
+            検索方法については、
+            <a
+              href="https://www.hi.u-tokyo.ac.jp/dev/tosho/kensaku/"
+              target="_blank"
+            >
+              所蔵史料の検索のページ
+            </a>
+            をご覧ください。
+            <br />
+            <br />
+          </p>
+          <h3 class="h04">
+            <span class="fc1"> 来室せずに閲覧できるサービス </span>
+          </h3>
+          <br />
+          <p class="mtx">
+            MyOPACの文献取寄せサービスをご利用可能でしたら、来室せずにコピーの取り寄せが可能です。
+            <br />
+            また、雑誌論文コピーのみご希望の場合は、
+            <a
+              href="https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_search/?loginMode=disp&amp;lang=0&amp;opkey=&amp;cmode=0&amp;smode=0"
+              target="_blank"
+            >
+              MyOPACの「PDF閲覧」サービス
+            </a>
+            をご利用ください。
+            <br />
+            また、史料画像プリント臨時サービスを試行実施しています。
+            <br />
+            ⇒詳細は
+            <a
+              href="https://www.hi.u-tokyo.ac.jp/tosho/shiryou_print.html"
+              target="_blank"
+            >
+              こちらのページ
+            </a>
+            をご覧ください。
+            <br />
+            <br />
+            史料のコピーの申し込みにつきましては、
+            <a href="https://www.hi.u-tokyo.ac.jp/dev/tosho/shiryoriyo/">
+              こちら
+            </a>
+            のページをご覧ください。
+            <br />
+            オンラインで公開している史料や本所出版物など、ご自宅等のパソコンで閲覧できるものもあります。詳細は、
+            <a href="https://www.hi.u-tokyo.ac.jp/dev/tosho/kensaku/">
+              こちら
+            </a>
+            のページをご覧ください。
+          </p>
+          <h2 class="h03">来室時に必要なもの</h2>
+          <h3 class="h04">
+            <span class="fc1">
+              予約確定メール受信後、ご来室の際には本学の身分証を必ずお持ちください。
+            </span>
+          </h3>
+          <p class="mtx"></p>
+          <ul class="mtx">
+            <li class="mtx">
+              本学の教職員・名誉教授……教職員証・名誉教授の証・所属部局発行の身分証・「東京大学附属図書館利用証」　のいずれか
+            </li>
+            <li class="mtx">本学の学生・大学院生……学生証</li>
+            <li class="mtx">本学の研究生・聴講生……学生証</li>
+          </ul>
+          <p></p>
+          <h2 class="h03">予約フォーム</h2>
+          <h3 class="h04">
+            予約フォームは複数ページあります。フォーム内の「次へ」のボタンで進み、最後に「送信」ボタンを押してください。
+          </h3>
+          <p class="mtx">
+            <a
+              class="btn03 v1 mb-10 mt-10"
+              href="../../yoyaku/gakunai/index.html"
+            >
+              予約フォーム（※ 学内の方）
+            </a>
+            <strong>
+              上のボタンをクリックすると別画面で予約フォームが開きます。
+            </strong>
+            <br />
+          </p>
+          <!-- 用紙での予約開始後再表示
+          <h4>Webの予約フォームからのお申込みができない方は、FAX・郵送用の予約用紙をご利用ください。</h4>
+          <p class="mtx">
+          <a href="./gakunai_youshi.pdf" target="_blank"> 【学内の方】FAX・郵送用の予約用紙（PDF）<br>
+          <a href="./gakunai_youshi.xlsx" target="_blank"> 【学内の方】FAX・郵送用の予約用紙（Excel）</a> <br>
+          （ダウンロードしてご利用ください。）※FAX・郵送の送付先は予約用紙の1枚目に記載してあります。<br>
+          </p>
+          -->
+          <p class="mtx">
+            閲覧手続きに関して、不明な点がありましたら
+            <a href="https://www.hi.u-tokyo.ac.jp/dev/tosho/toiawase/">
+              お問い合わせフォーム
+            </a>
+            よりお問い合わせください。
+          </p>
+          <h2 class="h03">感染症拡大防止策にご協力ください</h2>
+          <ul class="circle s">
+            <li class="mtx">
+              発熱や咳などの症状がある場合は、来室をお控えください。
+            </li>
+            <li class="mtx">必ずマスクを着用してください。</li>
+            <li class="mtx">
+              文具の共有を避けるため、鉛筆、ボールペン、メモ用紙をご持参ください。
+            </li>
+            <li class="mtx">
+              入室時、退室後には必ず石鹸による手洗いまたは手指の消毒をお願いいたします。
+            </li>
+            <li class="mtx">
+              消毒液を使用される際は、消毒液が史料・図書に付着しないようにご注意ください。なお、什器類は素材によってアルコールによる劣化・変質の恐れがありますので、消毒は手指とご自身の所持品のみお願いいたします。
+            </li>
+          </ul>
+        </div>
+        <!-- 本文終了位置-->
+      </layout>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            id: "【学内の方】閲覧手続きについて", //③タイトル編集
+            lang: "ja",
+            breadcrumbs: [
+            { text: "史料の利用", name: "library" },
+              {
+                text: "図書室利用（閲覧手続き）",
+                name: "library-service",
+              },
+            ],
+          };
+        },
+      });
+    </script>
+  </body>
+</html>

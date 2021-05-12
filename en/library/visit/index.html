@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      Visiting HI Library - 東京大学史料編纂所 | Historiographical
+      Institute The University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :id="id">
+        <!-- ②本文開始位置 -->
+<div class="page-link">
+  <ul>
+  <li><a href="#info">Information</a></li>
+  <li><a href="#visit">Visiting the Library</a></li>
+  <li><a href="#open">Library Hours</a></li>
+  <li><a href="#location">Library Location</a></li>
+  <li><a href="#covid-19">Our measures to prevent the spread of the COVID-19 </a></li>
+  </ul>
+  </div>
+  <h2 class="h03" id="info">Information</h2>
+  <div class="frame01">
+  <h3>
+                Important Notice: COVID-19 update (Jan. 8, 2021)
+              </h3>
+  <p>
+  <strong>For UTokyo members</strong>: Reservation required. For details, please refer to <a href="utokyo/index.html">this page</a>.
+              </p>
+  <p>
+  <strong>For Non-members of UTokyo</strong>: HI Library is temporarily closed for public users including UTokyo alumni. Announcement of re-opening will be posted on our website.<br/><br/>
+              </p>
+  <ul class="circle s">
+  <li>
+                  Requests for permission to publish or broadcast, and requests for duplication are acceptable. For details, please refer to <a href="../use/index.html">this page</a>. 
+                </li>
+  </ul>
+  </div>
+  <ul class="circle s">
+  <li class="mtx">
+                Procedures for issuing library cards have been changed from January 2021.  <br/>
+                <a href="public/index.html">For more information</a>.
+              </li>
+  <li class="mtx">
+                We require <strong>a prior reservation</strong> for visiting the Reading Room due to renovation for earthquake prevention and COVID-19 prevention.
+              </li>
+  </ul>
+  <h2 class="h03" id="visit">Visiting the Library</h2>
+  <h3 class="h04">
+              Please click on the button below to go to the appropriate page, read the instructions, and make a reservation.
+            </h3>
+  <p class="mb05">Click here for students, faculty and professor emeritus of The University of Tokyo</p>
+  <a class="btn03 v1 mb15" href="utokyo/index.html">UTokyo members</a>
+  <p class="mb05">
+              Click here for non-members of UTokyo. (Including UTokyo alumni, former faculty and staff.)
+            </p>
+  <a class="btn03 v2 mb15" href="public/index.html">Non-members of UTokyo</a>
+  <p>
+              *Procedures for issuing library cards have been changed from January 2021. Prior submission of an application form for using HI Library (for the general public) is no longer required.
+            </p>
+  <h2 class="h03" id="open">Library Hours</h2>
+  <p class="mtx">We are open the following dates from 13:30 to 16:00.</p>
+  <p>
+              Please select your preferred date and time on <a href="#visit">the reservation form</a> to make a reservation.
+            </p>
+  <p></p>
+  <h3 class="h04">March 2021</h3>
+  <ul class="circle s">
+  <li>1st (Mon)</li>
+  <li>4th (Thu)</li>
+  <li>5th (Fri)</li>
+  <li>8th (Mon)</li>
+  <li>12th (Fri)</li>
+  <li>15th (Mon)</li>
+  <li>18th (Thu)</li>
+  <li>19th (Fri)</li>
+  <li>22nd (Mon)</li>
+  <li>25th (Thu)</li>
+  <li>26th (Fri)</li>
+  <li>29th (Mon)</li>
+  </ul>
+  <p>Please note that HI Library may be closed without prior notice based on <a href="https://www.u-tokyo.ac.jp/en/general/COVID-19.html" target="_blank">the policies of UTokyo</a>. Please understand this in advance.  <br/>
+  If the reserved date is suddenly closed, we will contact you individually to inform you of the closure. 
+   </p>
+  <h2 class="h03" id="location">Library Location</h2>
+  <p>
+  3rd Floor, Historiographical Institute, The University of Tokyo (Hongo Campus)</a>
+  </p>
+  <h2 class="h03" id="covid-19">Our measures to prevent the spread of the COVID-19</h2>
+  <ul class="circle s">
+  <li>Installation of alcohol-based hand sanitizer</li>
+  <li>Periodic cleaning and disinfection of common areas</li>
+  <li>Limiting the number of seats and terminals to ensure proper social distancing</li>
+  <li>Our staff take their temperature, frequently wash their hands, and wear masks.</li>
+  <li>Placement of partitions on the service counter</li>
+  <li>
+      Ventilation by ventilation systems. (For protecting our materials, we do not leave the door and the windows open.) 
+              </li>
+  </ul>
+  
+  <!-- 本文終了位置-->
+      </layout>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            id: "Visiting HI Library", //③タイトル編集
+            lang: "en",
+            breadcrumbs: [{ text: "史料の利用", name: "library" }],
+          };
+        },
+      });
+    </script>
+  </body>
+</html>

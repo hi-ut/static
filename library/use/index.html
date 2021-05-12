@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      史料等利用案内（複製・掲載・放映等） - 東京大学史料編纂所 |
+      Historiographical Institute The University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :id="id">
+        <!-- ②本文開始位置 -->
+        <div class="page-link">
+          <ul>
+           <li>
+            <a href="#keisai">
+             掲載･放映等への使用
+            </a>
+           </li>
+           <li>
+            <a href="#fukusei">
+             複製
+            </a>
+           </li>
+           <li>
+            <a href="#honkoku">
+             翻刻
+            </a>
+           </li>
+           <li>
+            <a href="#shucchin">
+             出陳
+            </a>
+           </li>
+           <li>
+           </li>
+          </ul>
+         </div>
+         <h2 class="h03" id="keisai">
+          掲載・放映等への使用
+         </h2>
+         <ul class="ul30">
+          <li>
+           （１）以下の画像をクリックして「掲載･放映手続きについて」の図をご確認ください。
+          </li>
+         </ul>
+         <p>
+          <a href="flowchart.pdf" target="_blank">
+           <img alt="手続きフローチャート図" src="../images/flowchart.png"/>
+          </a>
+         </p>
+         <p class="fc1">
+          【2020.7】このたび手続きを一部見直しました。
+         </p>
+         <ul class="ul30">
+          <li>
+           （２）上記をお読みの上、お問い合わせが必要な史料の場合は、Webの
+           <a href="https://www.hi.u-tokyo.ac.jp/dev/tosho/toiawase/" target="_blank">
+            お問い合わせフォーム
+           </a>
+           からお問い合わせください。
+          </li>
+         </ul>
+         <ul class="ul10">
+          <li>
+           ＊Webのお問い合わせフォームをご利用になれない場合は、
+           <a href="qsheet.pdf" target="_blank">
+            問い合わせ用紙（PDF）
+           </a>
+           にご記入の上、史料・図書サービスチーム宛にお送りください。
+           <span class="stx">
+            <a href="qsheets.pdf" target="_blank">
+             記入見本
+            </a>
+           </span>
+          </li>
+         </ul>
+         <ul class="ul30">
+          <li>
+           （３）必要な手続き、あるいは利用承認可否をメールでご回答いたします。回答には通常約1週間かかります。
+          </li>
+         </ul>
+         <div class="frame01">
+          <h3>
+           郵送宛先（Webのお問い合わせフォーム・FAXともにご利用になれない場合のみ）
+          </h3>
+          <strong>
+           〒113-0033　東京都文京区本郷7-3-1　東京大学史料編纂所
+                  史料・図書サービスチーム
+          </strong>
+          <ul class="circle s">
+           <li>
+            ールアドレスをお持ちでない場合は、返信用封筒（切手貼付）を同封してください。
+           </li>
+           <li>
+            お電話でのお問い合わせにはお答えできません。
+           </li>
+           <li>
+            以前ご使用になった史料の二次使用についても、「掲載･放映手続きについて」の図をご確認の上、お問い合わせが必要な史料の場合は再度お問い合わせくださいますようお願いいたします。
+           </li>
+          </ul>
+         </div>
+         <section>
+          <div class="frame01">
+           <h3>
+            注意事項
+           </h3>
+           <strong>
+            予定の差し迫ったお申し出には対応致しかねますので、あらかじめご了承願います。
+           </strong>
+           <p>
+            利用条件や必要な手続きは、史料により異なります。上記の図をご確認の上、お問い合わせが必要な史料の場合は必ず事前にお問い合わせください。
+            <br/>
+            また、著作権者・原本所蔵者の立場と権利を尊重するため、原本所蔵者の承諾書を得ていただく等の制約を設けている史料があります。お問い合わせに対するご回答の際に、承諾書が必要な史料についてはご案内いたします。
+           </p>
+           <a class="btn01 v5" href="shodakusho.pdf" target="_blank">
+            複製・掲載等申請に必要な承諾書等について
+            <span class="fs-ss">
+             （PDF）
+            </span>
+           </a>
+          </div>
+          <div class="frame01">
+           <p>
+            本所では写真等の貸し出しは行っていません。
+            <br/>
+            写真等がご入用の場合は、本所指定業者による複製をお申し込みいただきます（詳しくは下の＜複製＞の項目をご覧ください）。
+            <strong>
+             お手元に複製品が届くまで2～3週間かかりますので、ご承知おきください
+            </strong>
+            。
+           </p>
+           <a class="btn01 v5" href="fukuseinagare4.1.pdf" target="_blank">
+            写真入手までの流れ
+            <span class="fs-ss">
+             （PDF
+             <span class="Kerning">
+              ）
+             </span>
+             （2011.4.1改
+             <span class="Kerning">
+              ）
+             </span>
+            </span>
+           </a>
+          </div>
+         </section>
+         <section>
+          <h2 class="h03" id="fukusei">
+           複製
+          </h2>
+          <p>
+           <span class="fc1">
+            【2020.7追記】複製申請受付を再開しております。まず最初に
+            <a href="https://www.hi.u-tokyo.ac.jp/dev/tosho/toiawase/">
+             お問い合わせフォーム
+            </a>
+            でお問い合わせください。
+           </span>
+           <br/>
+           複製については本所指定業者が作業をします。所定の申請書で窓口または郵送にてお申し込みください（FAXによる申し込みは受け付けておりません）。
+           <br/>
+           史料によっては、来所してマイクロフィルムからご自分でプリントできる場合もあります。
+           <br/>
+           史料により、複製条件、複製方法が異なります。
+           <strong>
+            著作権者、原本所蔵者の立場と権利を尊重するため、原本所蔵者の承諾書を得ていただく等の制約を設けている史料があります。
+           </strong>
+          </p>
+          <a class="btn01 v5 mb2" href="shodakusho.pdf" target="_blank">
+           複製・掲載等申請に必要な承諾書等について
+           <span class="fs-ss">
+            （PDF）
+           </span>
+          </a>
+          <p class="mb2">
+           撮影済みフィルムの有無、承諾書の要不要等は、史料・図書サービスチームまでお問い合わせください。
+           <br/>
+           <span class="fc1">
+            【2020.5.18追記】現在、問い合わせ用紙FAXの代わりとして
+            <a href="https://www.hi.u-tokyo.ac.jp/dev/tosho/toiawase/">
+             お問い合わせフォーム
+            </a>
+            でお問い合わせを受け付けております。
+           </span>
+           <br/>
+           複製条件、手続き等をご存知の方は、「史料・図書複製申請書」（様式３）を郵便で史料・図書サービスチームまでお送りください。
+           <br/>
+           <strong>
+            郵送宛先（返信用封筒（切手貼付）を同封してください）
+            <br/>
+            〒113-0033　東京都文京区本郷7-3-1　東京大学史料編纂所
+                    史料・図書サービスチーム
+           </strong>
+          </p>
+          <h3 class="h04">
+           申請様式
+          </h3>
+          <p>
+           まず最初にお問い合わせフォームでお問い合わせください。
+          </p>
+          <a class="btn01 v5 mb05" href="https://www.hi.u-tokyo.ac.jp/dev/tosho/toiawase/">
+           お問い合わせフォーム
+          </a>
+          <a class="btn01 v5 mb15" href="f.copy.pdf" target="_blank">
+           <span>
+            「史料・図書複製申請書
+            <span class="Kerning">
+             」
+            </span>
+            <span class="fs-ss">
+             （様式３
+             <span class="Kerning">
+              ）
+             </span>
+             （PDF
+             <span class="Kerning">
+              ）
+             </span>
+             （３ページ 表、裏、別紙
+             <span class="Kerning">
+              ）
+             </span>
+            </span>
+           </span>
+          </a>
+          <p>
+           一枚に書ききれない場合は別紙をお使いください。
+           <a href="f.copy.s.pdf" target="_blank">
+            記入見本
+           </a>
+           もご覧ください。
+          </p>
+          <ul class="circle s">
+           <li>
+            申請書類は両面あります。申請の際は両面印刷されるか貼り合わせてください。
+           </li>
+           <li>
+            申請が承認されましたら、申請書のコピーに承認印を捺して返送しますので、切手を貼付した返信用封筒を同封してください。
+           </li>
+           <li>
+            お電話でのお問い合わせにはお答えできません。
+           </li>
+           <li>
+            複写料金表：
+            <a href="copy.p.pdf" target="_blank">
+             料金表（PDF）
+            </a>
+            （2020年9月30日改訂※料金改訂無し・説明の補記のみ）
+           </li>
+          </ul>
+         </section>
+         <section>
+          <h2 class="h03" id="honkoku">
+           翻刻
+          </h2>
+          <p>
+           翻刻については、「複製・掲載・放映等に関するお問い合わせフォーム」からお問い合わせください。
+          </p>
+          <a class="btn01 v5 mb2" href="toiawae.html">
+           複製・掲載・放映等に関するお問い合わせフォーム
+          </a>
+          <ul class="ul10">
+           <li>
+            ＊Webのお問い合わせフォームをご利用になれない場合は、
+            <a href="qsheet.pdf" target="_blank">
+             問い合わせ用紙（PDF）
+            </a>
+            にご記入の上、史料・図書サービスチーム宛にお送りください。メールでご回答いたします。回答には通常約1週間かかります。
+           </li>
+          </ul>
+          <div class="frame01">
+           <h3>
+            郵送宛先（Webのお問い合わせフォーム・FAXともにご利用になれない場合のみ）
+           </h3>
+           <strong>
+            〒113-0033　東京都文京区本郷7-3-1　東京大学史料編纂所
+                    史料・図書サービスチーム
+           </strong>
+           <ul class="circle s">
+            <li>
+             メールアドレスをお持ちでない場合は、返信用封筒（切手貼付）を同封してください。
+            </li>
+            <li>
+             お電話でのお問い合わせにはお答えできません。
+            </li>
+           </ul>
+          </div>
+         </section>
+         <section>
+          <h2 class="h03" id="ill">
+           相互利用（学外）
+          </h2>
+          <p>
+           刊本（一般書籍）、逐次刊行物の複写はNACSIS-ILLシステムにて受け付けております。NACSIS-ILLシステムに参加しているご所属の大学等の図書館を通してお申し込みください。※木版本は複写できません。また保存状態等によっては複写できない場合があります。
+           <br/>
+           写本等の複製はNACSIS-ILLでは受け付けておりません。
+           <a href="#fukusei">
+            上記の「史料・図書複製申請書」（様式３）
+           </a>
+           によるお申込みとなります。
+           <br/>
+           貸借は行っておりません。
+          </p>
+         </section>
+         <section>
+          <h2 class="h03" id="shucchin">
+           出陳
+          </h2>
+          <p>
+           <span class="fc1">
+            【2020.7.28追記】問い合わせ・申請受付を再開しました。感染症の状況次第では、申請頂いてもご希望に沿えない場合がありますのでご承知おきください。
+           </span>
+          </p>
+          <p>
+           出陳（博物館等へ史料・図書の現物を展示のために貸し出すこと）については、図書部
+                  上席係長（図書総務担当）にFAXまたはメールでお問い合わせください。
+           <br/>
+           <br/>
+           問い合わせ時にお送りいただく書類：
+           <br/>
+           （１）史料借用申請書（仮）[
+           <a href="exhibit_pre.xls">
+            Excel
+           </a>
+           ]　[
+           <a href="exhibit_pre.pdf" target="_blank">
+            PDF
+           </a>
+           ]
+           <br/>
+           （２）展示企画書
+          </p>
+          <div class="frame01">
+           <h3>
+            宛先
+           </h3>
+           <strong>
+            FAX: 03-5841-8425
+            <br/>
+            E-mail: chiefl [％] hi.u-tokyo.ac.jp （ [％] は @
+                    に書き換えてください）
+           </strong>
+           <p>
+            史料の状態を確認し、出陳の可否、申請手続きを回答します。回答後、借用希望日の3か月前までに
+                    正式申請を行ってください。
+            <br/>
+            ポスターや図録への掲載など、図版の利用には
+            <a href="#keisai">
+             別に手続きが必要
+            </a>
+            です。
+           </p>
+          </div>
+        <!-- 本文終了位置-->
+      </layout>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            id: "史料等利用案内（複製・掲載・放映等）", //③タイトル編集
+            lang: "ja",
+            breadcrumbs: [{ text: "史料の利用", name: "library" }],
+          };
+        },
+      });
+    </script>
+  </body>
+</html>

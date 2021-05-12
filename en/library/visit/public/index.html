@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      [For non-members of UTokyo] Visiting HI Library - 東京大学史料編纂所 | Historiographical
+      Institute The University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :id="id">
+        <!-- ②本文開始位置 -->
+<div id="txtBody">
+  <h4>This page is for non-members of UTokyo. (Including UTokyo alumni, former faculty and staff.) </h4>
+  <h4>We require a prior reservation for visiting the reading room.</h4>
+  <br/>
+  <p class="mtx">
+                The reservation application forms require that you indicate the
+                materials you desire to consult. Published books and journals can
+                be found in the UTokyo OPAC. Unpublished materials can be found in
+                the Historiographical Institute's database Hi-CAT.<br/>
+  <a href="https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_search/?lang=1" target="_blank">[UTokyo OPAC]</a>　
+                <a href="http://wwwap.hi.u-tokyo.ac.jp/ships/" target="_blank">[Hi-CAT]</a>
+  <br/>
+  </p>
+  <h2 class="h03">Library Card</h2>
+  <p>
+  When you come to the library after receiving a reservation confirmation email, your "閲覧証票"(library card) valid for the current year is required.
+  </p>
+  <p>
+  For those who do not have a currently valid library card, the following documents are required. Please note that if your library card has expired, it cannot be renewed automatically, and the following documents will be required.
+  </p>
+  <table cellspacing="0" class="table02">
+  <tbody>
+  <tr>
+  <th class="mtx">For former UTokyo faculty and staff</th>
+  <td class="mtx">
+                      Certificate of Employment, or the Alumni Library Pass of UTokyo
+                    </td>
+  </tr>
+  <tr>
+  <th class="mtx">For UTokyo alumni</th>
+  <td class="mtx">
+                      Certificate of graduation or completion, or the Alumni Library Pass of UTokyo
+                    </td>
+  </tr>
+  <tr>
+  <th class="mtx">
+                      For those affiliated with other academic or research institutions
+                    </th>
+  <td class="mtx">
+                      an official ID card of your current institution
+                    </td>
+  </tr>
+  <tr>
+  <th class="mtx">For those affiliated with a public institution</th>
+  <td class="mtx">
+                      an official ID card of your current institution</span>
+  </td>
+  </tr>
+  <tr>
+  <th class="mtx">For those affiliated with publishers, the media, etc.</th>
+  <td class="mtx">
+                      an official ID card of your current institution</span>
+  </td>
+  </tr>
+  <tr>
+  <th class="mtx">For those who do not have an official ID card issued by your universities, institutions, etc.</th>
+  <td class="mtx">
+                      Please see "For the general public"
+  </td>
+  </tr>
+  <tr>
+  <th class="mtx">For the general public</th>
+  <td class="mtx">
+                      an official identification that includes your name and address
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p></p>
+  <h2 class="h03">Reservation Form</h2>
+  <p>
+                The reservation application form has multiple pages. Please click [次へ] at the end of each page, and [送信] at the end of the last page to submit the application.  
+              </p>
+  <p><a href="form_public.pdf" target="_blank">How to fill out the Reservation Form</a> (pdf)
+  </p>
+  <p class="mtx">
+  <a class="btn03 v2 mb-10 mt-10" href="" target="_blank" rel="noopener noreferrer">Reservation form</a>
+  </p>
+  <p><span class="fc1">*The reservation form is not available now.</span></p>
+  <p class="mtx">
+                For more information, please ask us: <a href="../../contact/index.html">Inquiry Form</a>
+              </p>
+  <h2 class="h03">For Preventing the Spread of the COVID-19</h2>
+  <p>Please follow the guidance below:
+  </p>
+  <ul class="circle s">
+  <li class="mtx">
+                  If you have a fever, or have recently had symptoms of illness, please refrain from visiting the library.
+                </li>
+  <li class="mtx">Please be sure to wear a mask.</li>
+  <li class="mtx">
+                  Please bring your own pencils, ballpoint pens, and paper notes to avoid sharing stationery.
+                </li>
+  <li class="mtx">
+                  Before entering and after leaving the reading room, please be sure to wash your hands with soap or disinfect your fingers.
+                </li>
+  <li class="mtx">
+                  When using disinfectant, please disinfect your hands and personal belongings only, as alcohol may cause deterioration and alteration of some materials. In addition, please be careful not to let disinfectant adhere on the materials.
+                </li>
+  </ul>
+  </div>
+  <!-- 本文終了位置-->
+      </layout>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            id: "[For non-members of UTokyo] Visiting HI Library", //③タイトル編集
+            lang: "en",
+            breadcrumbs: [
+              { text: "史料の利用", name: "library" },
+              {
+                text: "図書室利用（閲覧手続き）",
+                name: "library-service",
+              },
+            ],
+          };
+        },
+      });
+    </script>
+  </body>
+</html>

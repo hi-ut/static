@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      所蔵史料の検索 - 東京大学史料編纂所 | Historiographical Institute
+      The University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :id="id">
+        <!-- ②本文開始位置 -->
+     <div class="opac">
+      <fieldset>
+       <legend>
+        所蔵史料・図書の検索
+       </legend>
+       <div id="maintext">
+        <p>
+         ・図書(含：版本)・雑誌→東京大学OPAC
+        </p>
+        <table id="opac">
+         <tbody>
+          <tr>
+           <td>
+            <form accept-charset="UTF-8" action="https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_search/" method="get" name="opac" onsubmit="return chkSubmit();" style="margin: 0px" target="opac">
+             <p class="search-area">
+              <input name="smode" type="hidden" value="1"/>
+              <input name="amode" type="hidden" value="2"/>
+              <!--  dpmc_exp[]のvakue値は詳細検索画面のキャンパス（所属）の名称を設定-->
+              <input checked="" name="dpmc_exp[]" type="radio" value="- 史料編さん所"/>
+              史料編纂所
+              <span class="mr-4">
+               <input name="dpmc_exp[]" type="radio" value="all"/>
+               全学
+              </span>
+              <input id="kywd" name="kywd1_exp" size="40" type="text" value=""/>
+              <input type="submit" value="検索"/>
+              <input onclick="document.getElementById('kywd').value='';" onkeypress="" type="button" value="クリア"/>
+              <script type="text/javascript">
+               function chkSubmit() {
+                                var obj = document.forms["opac"];
+                                obj.method = "get";
+                                var kywd = document.getElementById("kywd1_exp");
+                                kywd.value = kywd.value.replace(
+                                  /^[\s　]+|[\s　]+$/g,
+                                  ""
+                                );
+
+                                obj.appname.value = navigator.appName;
+                                obj.version.value = navigator.appVersion.charAt(
+                                  0
+                                );
+
+                                if (kywd.value.length > 0) {
+                                  return true;
+                                  obj.focus();
+                                } else {
+                                  kywd.focus();
+                                  return false;
+                                }
+                              }
+                              s;
+              </script>
+             </p>
+            </form>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p class="mt-5">
+        ・編纂所所蔵の貴重書・写本･写真帳等→所蔵史料目録データベース
+        <br/>
+        <a href="http://wwwap.hi.u-tokyo.ac.jp/ships/" target="_blank">
+         データベース検索
+        </a>
+        から「所蔵史料目録データベース」を選んでください。
+       </p>
+      </fieldset>
+     </div>
+     <h2 class="h03" id="keisai">
+      史料・図書を探すには
+     </h2>
+     <p>
+      閲覧の予約や史料・図書の請求には「請求記号」と「史料・図書名」の特定が必要です。
+     </p>
+     <h3 class="h04" id="keisai">
+      本所所蔵の史料（貴重書・写本･写真帳など）
+     </h3>
+     <p>
+      <a href="https://wwwap.hi.u-tokyo.ac.jp/ships/">
+       史料編纂所所蔵史料目録データベース（Hi-CAT）
+      </a>
+      <br/>
+      （データベース選択画面より選択してください。左上の「史料の所在」の一番上にあります。）
+     </p>
+     <p>
+      <a href="https://www.hi.u-tokyo.ac.jp/tosho/hicat_kensaku.pdf">
+       史料編纂所所蔵史料目録データベース（Hi-CAT）の検索方法
+      </a>
+      （pdfファイル）
+     </p>
+     <p>
+      <a href="https://www.hi.u-tokyo.ac.jp/tosho/hicat_syubetsu.pdf">
+       史料種別について
+      </a>
+      （pdfファイル）
+     </p>
+     <p>
+      <a href="https://www.hi.u-tokyo.ac.jp/tosho/sasshi.pdf">
+       冊子体目録について
+      </a>
+      （pdfファイル）
+     </p>
+     <h3 class="h04" id="keisai">
+      本所所蔵の刊本(印刷されて刊行された図書）と雑誌、東京大学附属図書館･室所蔵の図書
+     </h3>
+     <p>
+      <a href="https://opac.dl.itc.u-tokyo.ac.jp/">
+       東京大学OPAC（オンライン蔵書目録データベース）
+      </a>
+     </p>
+     <p>
+      <a href="https://www.hi.u-tokyo.ac.jp/tosho/opac_kensaku.pdf">
+       東京大学OPACの検索方法について
+      </a>
+      （pdfファイル）
+     </p>
+     <h2 class="h03" id="fukusei">
+      オンラインで公開されている本所所蔵史料・本所刊行物
+     </h2>
+     <h3 class="h04" id="honkoku">
+      史料編纂所所蔵史料目録データベース（Hi-CAT）
+     </h3>
+     <p>
+      <a href="https://wwwap.hi.u-tokyo.ac.jp/ships/">
+       データベース選択画面
+      </a>
+      よりご利用いただけます。
+      <br/>
+      所蔵史料目録データベースの検索結果画面に「イメージ」ボタンが表示されているものは、史料画像をご覧いただけます。
+      <br/>
+      イメージ画像は、カラー画像（デジタルカメラ撮影）のの場合とモノクロ画像（マイクロフィルムをスキャンした画像）の場合があります。
+      <br/>
+      画像ビューアの使い方は
+      <a href="https://www.hi.u-tokyo.ac.jp/faq/viewer.html">
+       こちら
+      </a>
+      をご覧ください。
+      <br/>
+      本や映像、webサイトなどに公開画像を使用される場合は、必ず
+      <a href="https://www.hi.u-tokyo.ac.jp/tosho/shiryoriyo.html">
+       こちらのページ
+      </a>
+      で利用条件をご確認ください。
+     </p>
+     <h3 class="h04" id="honkoku">
+      史料集版面ギャラリー
+     </h3>
+     <p>
+      <a href="https://www.hi.u-tokyo.ac.jp/publication/dip/index.html">
+       史料集版面ギャラリー
+      </a>
+      では、東京大学史料編纂所が編纂・出版した史料集の版面画像を公開しています。
+      <br/>
+      （『大日本史料』、『大日本古文書』、『日本関係海外史料目録』など）
+     </p>
+     <h3 class="h04" id="honkoku">
+      所報等
+     </h3>
+     <p>
+     </p>
+     <ul class="circle s">
+      <li>
+       <a href="https://www.hi.u-tokyo.ac.jp/publication/syoho-j.html">
+        東京大学史料編纂所報
+       </a>
+      </li>
+      <li>
+       <a href="https://www.hi.u-tokyo.ac.jp/publication/kiyo-j.html">
+        東京大学史料編纂所研究紀要
+       </a>
+      </li>
+      <li>
+       東京大学史料編纂所画像史料解析センター通信 ◆
+       <a href="https://www.hi.u-tokyo.ac.jp/gazo/centernewslist.htm">
+        目次
+       </a>
+       ◆
+       <a href="https://repository.dl.itc.u-tokyo.ac.jp/">
+        東京大学学術機関リポジトリ（UTokyo Repository）
+       </a>
+       にて、一部の号が公開されています。
+      </li>
+     </ul>
+     <h2 class="h03" id="honkoku">
+      本所データベース
+     </h2>
+     <p>
+      このページで紹介しているデータベースの他にも、多種多様なデータベースが公開されていますす。「
+      <a href="https://wwwap.hi.u-tokyo.ac.jp/ships/">
+       データベース選択画面
+      </a>
+      」よりご利用ください。
+      <br/>
+      なお、データベースに関するお問い合わせは図書室では承っておりません。
+      <br/>
+      <a href="https://www.hi.u-tokyo.ac.jp/footer/inquiry-j.html">
+       こちらのページ
+      </a>
+      からお願いいたします。
+     </p>
+     <h3 class="h04">
+      Hi-CAT Plus
+     </h3>
+     <p>
+      Hi-CAT
+            Plusは、史料編纂所がこれまで撮影・収集した国内および海外に所在する史料の画像データを閲覧するためのデータベースです。
+      <br/>
+      画像データは図書室設置端末にて閲覧可能です。（現在、禁裏公家文庫史料の一部がオンラインにて公開されています。詳しくは
+      <a href="https://www.hi.u-tokyo.ac.jp/faq/reuse_kinri.html">
+       こちらのページ
+      </a>
+      をご覧ください。）
+     </p>
+     <h3 class="h04">
+      日本古文書ユニオンカタログ
+     </h3>
+     <p>
+      日本古文書ユニオンカタログでは、原本や影写本や謄写本、写真帳、刊本などに収録されている「西暦1600年以前の古文書」の検索が可能です。
+     </p>
+     <h2 class="h03" id="ill">
+      他機関のデータベース
+     </h2>
+     <p>
+      ※下記のサイトは、閲覧室設置のPC端末からはアクセスできません。あらかじめご了承ください。
+     </p>
+     <h3 class="h04">
+      CiNii Books（国立情報学研究所）
+     </h3>
+     <p>
+      <a href="https://ci.nii.ac.jp/books/?l=ja" target="_blank">
+       CiNii Books
+      </a>
+      では、全国の大学等の図書館の所蔵を検索できます。
+      <br/>
+      東京大学附属図書館の図書・雑誌の所蔵も検索結果に含まれます。
+     </p>
+     <h3 class="h04">
+      国立国会図書館デジタルコレクション
+     </h3>
+     <p>
+      刊行年月日から相当期間が経過している本は、
+      <a href="https://dl.ndl.go.jp/" target="_blank">
+       国立国会図書館デジタルコレクション
+      </a>
+      で一般公開されている場合があります。
+      <br/>
+      また、「国立国会図書館/図書館送信限定」と表示される図書や雑誌の場合、ご所属の大学の図書館やお住まいの地域の図書館で閲覧可能な場合があります。
+      <br/>
+      詳しくはお近くの図書館へご相談ください。
+     </p>
+     <h3 class="h04">
+      日本古典籍総合目録データベース（国文学研究資料館）
+     </h3>
+     <p>
+      <a href="https://base1.nijl.ac.jp/~tkoten/" target="_blank">
+       日本古典籍総合目録データベース
+      </a>
+      は、日本の古典籍の書誌・所在情報を検索できるデータベースです。
+      <br/>
+      検索結果に「東大史料」と記載されているものが本所の所蔵です。
+      <br/>
+      本所での書名は、「統一書名」と異なる場合がありますので、本所所蔵目録データベースや東京大学OPACを「統一書名」で検索しても見つからない場合は、「別書名」に記載されている書名で検索してください。
+     </p>
+     <!-- 本文終了位置-->
+      </layout>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            id: "所蔵史料の検索", //③タイトル編集
+            lang: "ja",
+            breadcrumbs: [{ text: "史料の利用", name: "library" }],
+          };
+        },
+      });
+    </script>
+  </body>
+</html>

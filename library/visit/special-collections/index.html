@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+      name="viewport"
+    />
+    <title>
+      貴重書の閲覧について - 東京大学史料編纂所 | Historiographical Institute
+      The University of Tokyo
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://hi-ut.github.io/assets/css/style.css"
+      rel="stylesheet"
+    />
+    <script src="https://hi-ut.github.io/assets/js/vue.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/axios.min.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/es6-promise.auto.min.js"></script>
+
+    <script src="https://hi-ut.github.io/assets/js/env.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/layouts/default.js"></script>
+    <script src="https://hi-ut.github.io/assets/js/components/members.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <layout :lang="lang" :breadcrumbs="breadcrumbs" :index="3" :id="id">
+        <!-- ②本文開始位置 -->
+        <h2 class="h03" id="info">貴重書の閲覧について</h2>
+        <div id="txtBody">
+          <p class="mtx"></p>
+          <ul class="circle s">
+            <li class="mtx">
+              <span class="red">
+                貴重書には閲覧に際して事前申請が必要な史料があります。
+              </span>
+              申請の承認や史料の準備に時間がかかりますので、1週間以上余裕を持ってお申込みください。
+            </li>
+            <li class="mtx">
+              事前申請と閲覧予約は別の手続きとなります。事前申請の承認がおりてから、閲覧予約を行ってください。
+            </li>
+            <li class="mtx">
+              データベースで史料の画像が公開されているもの、マイクロフィルムや写真帳など代替閲覧手段のあるものについては、原則として代替手段での閲覧をお願いいたします。
+            </li>
+            <li class="mtx">
+              <a href="https://wwwap.hi.u-tokyo.ac.jp/ships/" target="_blank">
+                所蔵史料目録データベース（Hi-CAT）
+              </a>
+              の【利用制限】欄に【閲覧不可】と表示されている史料は、閲覧により破損する恐れがあるため閲覧できません。また、特に利用制限が表示されていない史料でも、状態確認の結果、閲覧不可となる場合があります。
+            </li>
+          </ul>
+          <p></p>
+          <h2 class="h03 mt-10">貴重史料・図書の一覧</h2>
+          <h3 class="h04">
+            <a href="https://wwwap.hi.u-tokyo.ac.jp/ships/" target="_blank">
+              所蔵史料目録データベース（Hi-CAT）
+            </a>
+            の【史料種別】欄に「貴重書」並びに以下の表記があるもの
+          </h3>
+          <ul class="mtx">
+            <li>原本・古写本</li>
+            <li>模写</li>
+            <li>拓本</li>
+            <li>台紙付写真</li>
+            <li>古写真</li>
+            <li>原物史料</li>
+            <li>模造史料</li>
+            <li>
+              特殊蒐書（特殊蒐書の一覧は
+              <a
+                href="https://wwwap.hi.u-tokyo.ac.jp/ships_help/OSIDE/W01/shusho.html"
+                target="_blank"
+              >
+                こちら
+              </a>
+              ）
+            </li>
+          </ul>
+          <h3 class="h04">
+            <a href="https://opac.dl.itc.u-tokyo.ac.jp/" target="_blank">
+              東京大学OPAC
+            </a>
+            に登録されている本所所蔵図書のうち、請求記号が以下で始まるもの
+          </h3>
+          <ul class="mtx">
+            <li>IWAO</li>
+            <li>TOKORO</li>
+            <li>池田請来史料</li>
+            <li>旧造兵</li>
+          </ul>
+          <p class="mtx">
+            所蔵史料の検索については、
+            <a href="kensaku.html"> こちらのページ </a>
+            をご覧ください。
+          </p>
+          <p class="mtx">主な貴重書については以下のページをご覧ください。</p>
+          <ul class="mtx">
+            <li>
+              <a
+                href="https://www.hi.u-tokyo.ac.jp/collection/collection02-j.html"
+                target="_blank"
+              >
+                貴重書
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.hi.u-tokyo.ac.jp/collection/collection03-j.html"
+                target="_blank"
+              >
+                特殊蒐書
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.hi.u-tokyo.ac.jp/collection/collection04-j.html"
+                target="_blank"
+              >
+                その他の貴重書
+              </a>
+            </li>
+          </ul>
+          <p></p>
+          <h2 class="h03 mt-10">事前申請が必要な貴重書</h2>
+          <div class="frame01">
+            <h3>以下の史料の閲覧には、事前申請が必要です。</h3>
+            <p class="mtx"></p>
+            <ul class="mtx">
+              <li>重要文化財指定史料</li>
+              <li>0架（請求記号が0またはS0で始まる史料）</li>
+              <li>貴架（請求記号が貴またはS貴で始まる史料）</li>
+              <li>模写</li>
+              <li>拓本</li>
+              <li>古写真</li>
+              <li>原物史料</li>
+              <li>模造史料</li>
+            </ul>
+            <p></p>
+            <p class="mtx">
+              <strong> 特殊蒐書のうち、以下の史料群 </strong>
+            </p>
+            <ul class="mtx">
+              <li>外務省引継史料（外編は事前申請不要）</li>
+              <li>近藤重蔵関係史料</li>
+              <li>薩藩旧記雑録</li>
+              <li>島津家文書（国宝指定の史料については下記参照）</li>
+              <li>二条家記録</li>
+              <li>益田家文書</li>
+              <li>林家史料</li>
+            </ul>
+            <p></p>
+            <p class="mtx">
+              ★島津家文書(国宝指定の史料）について
+              <br />
+              原本の閲覧はできませんので、マイクロフィルム、デジタルデータをご覧ください。その場合は貴重書閲覧申請は不要で、通常の閲覧手続きで利用できます。
+              <br />
+              出陳の事前調査を希望する場合は
+              <a href="./shiryoriyo.html#shucchin"> お問い合わせ </a>
+              ください。
+              <br />
+            </p>
+          </div>
+          <h2 class="h03 mt-10">事前申請の手続き</h2>
+          <p class="mtx">
+            <a href="kichosho-f.pdf " target="_blank">
+              「貴重書閲覧申請書」(様式2）
+            </a>
+            にてご申請ください。
+            <br />
+            ※閲覧目的は具体的に記入してください。　「×調査・研究のため」
+            <br />
+            ※同じ史料を二人以上で閲覧なさる場合は各々ご申請ください。
+            <br />
+            ※貴重書の閲覧には本所の閲覧証票が必要です。閲覧証票をお持ちでない方は通常の閲覧手続きの項をご参照ください。
+            <br />
+            ⇒
+            <a href="etsurangakunai.html"> 閲覧手続き：学内の方 </a>
+            、
+            <a href="etsurangakugai.html"> 閲覧手続き：学外の方 </a>
+          </p>
+          <p class="mtx">
+            <strong> 「貴重書閲覧申請書」の提出先 </strong>
+            <br />
+            FAXまたは郵送にて、
+            <a href="kichosho-f.pdf " target="_blank">
+              「貴重書閲覧申請書」(様式2）
+            </a>
+            をお送りください。
+            <br />
+            決裁完了後、メールまたはFAX・電話にて回答します。
+            <br />
+          </p>
+          <dl class="listByDate">
+            <dt class="mtx">
+              <strong> FAX宛先 </strong>
+            </dt>
+            <dd class="mtx">03-5841-8425</dd>
+          </dl>
+          <dl class="listByDate">
+            <dt class="mtx">
+              <strong> 郵送宛先 </strong>
+            </dt>
+            <dd class="mtx">
+              〒113-0033　東京都文京区本郷7-3-1　東京大学史料編纂所
+              史料・図書サービスチーム
+            </dd>
+          </dl>
+          <p></p>
+        </div>
+        <!-- 本文終了位置-->
+      </layout>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            id: "貴重書の閲覧について", //③タイトル編集
+            lang: "ja",
+            breadcrumbs: [
+            { text: "史料の利用", name: "library" },
+              {
+                text: "図書室利用（閲覧手続き）",
+                name: "library-service",
+              },
+            ],
+          };
+        },
+      });
+    </script>
+  </body>
+</html>
